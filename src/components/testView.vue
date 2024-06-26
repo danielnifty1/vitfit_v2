@@ -1,3 +1,28 @@
+<script lang="ts">
+  // Import Swiper Vue.js components
+  import { Swiper, SwiperSlide } from 'swiper/vue';
+
+  // Import Swiper styles
+  import 'swiper/css';
+
+  import 'swiper/css/navigation';
+
+//   import './style.css';
+  // import required modules
+  import {EffectCoverflow,Autoplay, Pagination, Navigation } from 'swiper/modules';
+
+  export default {
+    components: {
+      Swiper,
+      SwiperSlide,
+    },
+    setup() {
+      return {
+        modules: [EffectCoverflow,Autoplay, Pagination, Navigation],
+      };
+    },
+  };
+</script>
 <template>
     <section class="testimonials bg-[#19092D] h-full">
        <div class="container p-10  ">
@@ -13,7 +38,7 @@
       disableOnInteraction: false,
     }"
     :pagination="{
-      clickable: fa,
+      clickable: false,
     }"
     :modules="modules"
    
@@ -62,28 +87,3 @@
 
    </section>
 </template>
-<script>
-  // Import Swiper Vue.js components
-  import { Swiper, SwiperSlide } from 'swiper/vue';
-
-  // Import Swiper styles
-  import 'swiper/css';
-
-  import 'swiper/css/navigation';
-
-//   import './style.css';
-  // import required modules
-  import {EffectCoverflow,Autoplay, Pagination, Navigation } from 'swiper/modules';
-
-  export default {
-    components: {
-      Swiper,
-      SwiperSlide,
-    },
-    setup() {
-      return {
-        modules: [EffectCoverflow,Autoplay, Pagination, Navigation],
-      };
-    },
-  };
-</script>

@@ -197,7 +197,7 @@ background: linear-gradient(116.71deg, rgba(250, 247, 253, 0.05) 3.21%, rgba(250
     }
     .overlay-text {
       position: absolute;
-      top: 50%; 
+      top: 55%; 
       left: 50%; 
       transform: translate(-50%, -50%); 
       background: linear-gradient(180deg, rgba(25, 9, 45, 0) 0%, #19092D 68.77%);

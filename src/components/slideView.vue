@@ -1,3 +1,30 @@
+<script  lang="ts">
+// import { vue } from 'vue'
+ // Import Swiper Vue.js components
+ import { Swiper, SwiperSlide } from 'swiper/vue';
+
+// Import Swiper styles
+import 'swiper/css';
+
+import 'swiper/css/navigation';
+
+//   import './style.css';
+// import required modules
+import {EffectCoverflow,Autoplay, Pagination, Navigation } from 'swiper/modules';
+
+export default {
+  components: {
+    Swiper,
+    SwiperSlide,
+  },
+  setup() {
+    return {
+      modules: [EffectCoverflow,Autoplay, Pagination, Navigation],
+    };
+  },
+};
+
+</script>
 <template>
     <div class="items-center p-1 w-full">
         <!-- <h2 class="text-center text-3xl font-bold ">VITFIT <span class="text-[#630485]">SUCCESS STORY</span></h2> -->
@@ -29,28 +56,4 @@
     </div>
 </template>
 
-<script>
-  // Import Swiper Vue.js components
-  import { Swiper, SwiperSlide } from 'swiper/vue';
-
-  // Import Swiper styles
-  import 'swiper/css';
-
-  import 'swiper/css/navigation';
-
-//   import './style.css';
-  // import required modules
-  import {EffectCoverflow,Autoplay, Pagination, Navigation } from 'swiper/modules';
-
-  export default {
-    components: {
-      Swiper,
-      SwiperSlide,
-    },
-    setup() {
-      return {
-        modules: [EffectCoverflow,Autoplay, Pagination, Navigation],
-      };
-    },
-  };
-</script>
+ 

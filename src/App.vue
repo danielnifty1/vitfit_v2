@@ -1,13 +1,11 @@
-<script setup lang="ts">
-import HomeView from "./components/HomeView.vue";
-import NavBar from "./components/NavBar.vue";
 
-
-</script>
 
 <template>
-  <NavBar />
-  <HomeView />
+  <router-view name="NavBar"></router-view>
+
+  <main class="bg-[#19092d]">
+    <router-view />
+  </main>
  
   
 </template>
