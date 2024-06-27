@@ -24,12 +24,12 @@ export default {
 };
 </script>
 <template>
-  <div class="items-center p-1 w-full">
+  <div class="items-center p-1 w-full h-full">
       <!-- <h2 class="text-center text-3xl font-bold ">VITFIT <span class="text-[#630485]">SUCCESS STORY</span></h2> -->
   </div>
 
 
-  <div class="w-full p-10">
+  <div class="w-full h-full  p-10">
   <swiper 
   :slidesPerView="4"
   :spaceBetween="0"
@@ -187,13 +187,7 @@ export default {
 
 
       <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
-      <!-- If we need navigation buttons -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-      <!-- If we need scrollbar -->
-      <div class="swiper-scrollbar"></div>
-
+    
   </swiper>
 
   </div>

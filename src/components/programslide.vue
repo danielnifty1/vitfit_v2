@@ -29,17 +29,9 @@
    
   <section>
     <div class="flex bg-[#19092d]">
-      <div class="w-2/12 flex items-center">
-        <div class="w-full text-right">
-          <button>
-            <span
-              class="fa fa-arrow-left p-5 rounded-full border-white border-2 text-white hover:bg-[#35cdf1] hover:border-0"
-            ></span>
-          </button>
-        </div>
-      </div>
+   
 
-      <div class="w-full" id="sliderContainer" ref="sliderContainer">
+      <div class="w-full p-10" id="sliderContainer" ref="sliderContainer">
         <ul id="slider" ref="slider" class="flex w-full  space-x-5">
             <li   class="w-full sliderli  ">
                 <div class=" rounded-lg p-5 grid grid-cols-1 gap-4  sliderbox">
@@ -83,15 +75,7 @@
 
       </div>
 
-      <div class="w-2/12 flex items-center">
-        <div class="w-full sliderli">
-          <button class="shadow-lg border rounded-full">
-            <span
-              class="fa fa-arrow-right p-5 rounded-full border-white border-2 text-white hover:bg-[#35cdf1] hover:border-0"
-            ></span>
-          </button>
-        </div>
-      </div>
+     
     </div>
   </section>
 </template>

@@ -8,30 +8,33 @@ import FooterFile from "./FooterFile.vue";
 
 </script>
 <template>
-  <div class="bg-image contaidner min-h-screen bg-contain">
+  <div class="bg-image contaidner  h-fit bg-contain">
     <div class="grid grid-cols-2 gap-1">
-      <div class="text-white mt-48 px-20 space-y-32">
-        <div>
-          <h1 class="text-6xl leading-[100px] font-poppins font-bold">
+      <div class="text-white md:mt-48  md:px-20 mt-24 md:space-y-32 space-y-5 pl-5  ">
+        <div class="space-y-2 md:space-y-0" >
+          <h1 class="md:text-6xl md:leading-[100px] font-poppins font-bold">
             THE <span class="text-[#35cdf1]">REAL WORKOUT</span> <br />
             STARTS WHEN YOU <br />
             WANT TO STOP
           </h1>
-          <h6>Push harder than yesterday if you want a different story</h6>
+          <h6 class="text-sm">Push harder than yesterday if you want a different story</h6>
         </div>
-        <button class="rounded book-button p-5 text-2xl">
+
+        <button class="rounded book-button md:p-5 md:text-2xl p-1  ">
           Book Appointment <span class="fa fa-arrow-right"></span>
         </button>
       </div>
-      <div class="mt-20 min-h-screen">
+
+      <div class="mt-20 pr-5 md:pr-0  ">
         <img src="/images/vid.jpg" class="h-1/12" />
       </div>
+
     </div>
   </div>
 
   <div class="bg-[#19092d]">
-    <div class="abt1">
-      <div class="p-10 grid grid-cols-1 gap-4 place-items-center">
+    <div class="abt1 ">
+      <div class="hidden p-10 md:grid grid-cols-1 gap-4 place-items-center">
         <div
           class="rounded-md aboutrectangle w-10/12 h-full p-20 grid grid-cols-1 gap-4"
         >
@@ -91,15 +94,15 @@ import FooterFile from "./FooterFile.vue";
       </div>
     </div>
 
-    <div class="grid grid-cols-2 gap-4 p-10">
-      <div class="space-y-10 shadow p-20">
+    <div class="md:grid md:grid-cols-2 gap-4 md:p-10">
+      <div class="md:space-y-10 space-y-5 shadow md:p-20 p-5">
         <h1
-          class="font-bold text-[50px] text-white mt-10 font-poppins leading-[50px]"
+          class="font-bold md:text-[50px] text-white md:mt-10 text-center text-2xl font-poppins md:leading-[50px]"
         >
-          Work out at home <br />for free.
+          Work out at home <br class="hidden md:flex" />for free.
         </h1>
 
-        <h6 class="text-[#FAF6FD80] font-poppins">
+        <h6 class="text-[#FAF6FD80] font-poppins p-5 md:p-0">
           We believe fitness should be accessible to everyone, everywhere,
           regardless of income or access to a gym. With hundreds of professional
           workouts, healthy recipes and informative articles, as well as one of
@@ -114,19 +117,19 @@ import FooterFile from "./FooterFile.vue";
         </h2>
       </div>
 
-      <div class="p-10">
-        <img src="/images/abt2.png" />
+      <div class="md:p-10 p-5">
+        <img src="/images/abt2.png" class="p-5 md:p-5" />
       </div>
     </div>
 
-    <div class="grid grid-cols-2 gap-4 p-10">
-      <div class="p-10">
-        <img src="/images/abt3.png" />
+    <div class="md:grid md:grid-cols-2 md:p-10 flex flex-col-reverse">
+      <div class="md:p-10">
+        <img src="/images/abt3.png" class="p-10 md:p-0" />
       </div>
 
-      <div class="space-y-2 shadow p-20">
+      <div class="space-y-2 shadow md:p-20">
         <h1
-          class="font-bold text-[50px] text-white mt-10 font-poppins leading-[50px]"
+          class="font-bold md:text-[50px] text-center md:text-left text-white md:mt-10 font-poppins leading-[50px]"
         >
           Our Approach
         </h1>
@@ -152,7 +155,7 @@ import FooterFile from "./FooterFile.vue";
           </div>
         </div>
 
-        <h2 class="font-bold font-poppins">
+        <h2 class="font-bold font-poppins pl-10 pb-5 md:pl-0 md:pb-0">
           <a href="" class="mt-10 text-[#35cdf1] space-x-10"
             >See More <span class="fa fa-arrow-right text-white"></span>
           </a>
@@ -163,7 +166,7 @@ import FooterFile from "./FooterFile.vue";
     <div class="grid grid-cols-2 gap-4 place-content-between p-10">
       <div class="bgtext"></div>
 
-      <div class="grid grid-cols-2 place-items-end">
+      <div class="md:grid grid-cols-2 place-items-end   hidden">
         <div class="space-x-2">
           <span
             class="fa fa-arrow-left p-5 rounded-full border-white border-2 text-white hover:bg-[#35cdf1] hover:border-0"
@@ -183,7 +186,7 @@ import FooterFile from "./FooterFile.vue";
           <h1 class="text-center text-3xl font-bold font-poppins text-white">
             Vitfit Member’s Success <br />Story
           </h1>
-          <div class="h-[500px]">
+          <div class="  ">
             <testimonialview />
           </div>
         </div>
