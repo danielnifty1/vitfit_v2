@@ -22,6 +22,7 @@
       };
     },
   };
+ 
 </script>
 <template>
     <section class="testimonials bg-[#19092D] h-full">
@@ -31,7 +32,7 @@
            </div>
 
            <swiper 
-    :slidesPerView="3"
+    :slidesPerView="2"
     :spaceBetween="30"
     :autoplay="{
       delay: 2500,
@@ -50,7 +51,7 @@
                    
                    <div class="swiper-slide testimonials-item">
                        <div class="info">
-                           <img src="/images/about.png" class="p-2">
+                           <img src="/images/about.png" class="">
                            <div class="text-box">
                                <h3 class="name">John Doe</h3>
                                 <span class="job">web developer</span>
@@ -64,23 +65,13 @@
                            <i class="fa fa-star" ></i>
                            <i class="fa fa-star" ></i>
                            <i class="fa fa-star" ></i>
-
                        </div>
-
                    </div>
-
-               
-
-                
                </div>
 
            </div>
              <!-- If we need pagination -->
-           <div class="swiper-pagination js-testimonials-pagination "></div>
-
-           <!-- If we need navigation buttons -->
-           <div class="swiper-button-prev"></div>
-           <div class="swiper-button-next"></div>
+        
        </div>
     </swiper>
        </div>

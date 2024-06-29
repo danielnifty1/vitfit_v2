@@ -2,19 +2,21 @@
 // import { vue } from 'vue'
 </script>
 <template>
-    <div class="p-10  ">
-        <div class="grid grid-cols-2 gap-4 content-between">
-            <div class="w-5/12 space-y-5 pl-10">
+    <div class=" md:p-10 abt1">
+        <div class="grid grid-cols-2 gap-4 content-between ">
+            <div class="w-full space-y-5 md:pl-10  ">
                 <div class="flex pl-10 space-x-2 ">
                     <img src="/images/logo.png" >
                     <h4 class="text-white font-bold text-[24px]">
                     VIT<span class="text-[#2598F1]">FIT</span>
                     </h4>
                 </div>
+
                 <p class="pl-10 text-[#FAF6FD80]"> VitFit where your fitness goals become our mission.</p>
             </div>
-            <div class="grid grid-cols-1   pr-10">
-                <div class="grid grid-cols-3 gap-4 pr-20 mr-20">
+
+            <div class="md:grid md:grid-cols-1 md:flex w-full   md:pr-10">
+                <div class="grid grid-cols-3 gap-4 md:pr-20 md:mr-20 space-x-10">
                     <div class="text-white">
                         <h1 class="font-bold font-poppins text-white">Sitemap</h1>
                         <ul>
@@ -33,7 +35,7 @@
                              
                         </ul>
                     </div>
-                    <div class="text-white">
+                    <div class="text-white md:grid hidden">
                         <h1 class="font-bold font-poppins text-white">Social Media</h1>
                         <ul class="flex space-x-5">
                             <li><a><span class="fa fa-instagram"></span></a></li>
@@ -48,8 +50,8 @@
 
     </div>
     <hr>
-    <div class="pl-20 pt-5 grid grid-cols-2 gap-4 content-between">
-        <div class="flex pl-10 pb-5 text-white space-x-5 ">
+    <div class="md:pl-20 pl-10 pt-5 grid grid-cols-2 gap-4 content-between">
+        <div class="flex md:pl-10 p-2 pb-5 text-white md:space-x-5 ">
             <img src="/images/curtesy.png">
             <span>2024 VITFIT</span>
         </div>

@@ -32,7 +32,7 @@
    
 
       <div class="w-full p-10" id="sliderContainer" ref="sliderContainer">
-        <ul id="slider" ref="slider" class="flex w-full  space-x-5">
+        <ul id="slider" ref="slider" class="md:flex grid w-full  md:space-x-5 p-10 space-y-5 md:space-y-0">
             <li   class="w-full sliderli  ">
                 <div class=" rounded-lg p-5 grid grid-cols-1 gap-4  sliderbox">
                     <img src="/images/group3.png">

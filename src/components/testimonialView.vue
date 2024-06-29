@@ -24,9 +24,7 @@ export default {
 };
 </script>
 <template>
-  <div class="items-center p-1 w-full h-full">
-      <!-- <h2 class="text-center text-3xl font-bold ">VITFIT <span class="text-[#630485]">SUCCESS STORY</span></h2> -->
-  </div>
+ 
 
 
   <div class="w-full h-full  p-10">
@@ -42,9 +40,9 @@ export default {
   }"
   :modules="modules"
  
-  class="mySwiper  p-20 ">
+  class="mySwiper  ">
   <swiper-slide class="w-full h-full bor der-4"> 
-    <div class="storyContainer w-full h-full">
+    <div class="storyContai ner w-full h-full">
             <img src="/images/story1.png" alt="image"  >
             <div class="overlay-text w-full ">
               <div class=" w-full mt-96">

@@ -2,9 +2,11 @@
 // import { vue } from 'vue'
 
 import testimonialview from "./testimonialView.vue";
+import testview from "./testimonialView.vue";
 
-import programslide from "./programslide.vue";
-import FooterFile from "./FooterFile.vue";
+
+// import programslide from "./programslide.vue";
+ 
 
 </script>
 <template>
@@ -181,38 +183,40 @@ import FooterFile from "./FooterFile.vue";
     <programslide />
 
     <div class="pl-20 mt-10 tgeneral">
-      <div class="trangle-bg p-10 mt-10">
-        <div class="h-98">
-          <h1 class="text-center text-3xl font-bold font-poppins text-white">
+      <div class="trangle-bg md:p-10 md:mt-10">
+        <div class="md:h-98">
+          <p class="text-center md:text-3xl font-bold font-poppins text-white">
             Vitfit Member’s Success <br />Story
-          </h1>
+          </p>
           <div class="  ">
-            <testimonialview />
+            <testimonialview class="hidden md:flex" />
+            <testview class="flex md:hidden" />
+
           </div>
         </div>
       </div>
     </div>
 
-    <div class="appcoming">
-      <div class="grid grid-cols-2 gap-4 p-10 pl-20 mt-10">
-        <div class="p-10 pl-20 space-y-8">
-          <h2 class="text-[#35cdf1] font-bold text-6xl tracking-widest">
+    <div class="appco ming">
+      <div class="grid grid-cols-2 gap-4 md:p-10 md:pl-20 pr-10 p-2 mt-10 appcoming">
+        <div class="p-10 md:pl-20 space-y-8">
+          <h2 class="text-[#35cdf1] font-bold md:text-6xl text-3xl tracking-widest">
             VITFIT APP
           </h2>
-          <h2 class="text-[#FFA800CC] text-6xl font-Pompiere">
-            COMING SOON!!!233
+          <h2 class="text-[#FFA800CC] md:text-6xl text-2xl font-Pompiere">
+            COMING SOON!!!
           </h2>
         </div>
 
-        <div class="p-10 grid grid-cols-2 gap-4">
+        <div class="md:p-10 grid grid-cols-2 gap-4  ">
           <img src="/images/iphone1.png" class="mt-24" />
 
           <img src="/images/iphone2.png" />
         </div>
       </div>
 
-      <div class="p-10 w-full flex justify-center">
-        <div class="w-8/12 rounded-lg subscribe ">
+      <div class="p-10 w-full flex justify-center ">
+        <div class="md:w-8/12 w-full rounded-lg subscribe ">
           <div class="text-[#FAF6FD80] grid grid-cols-1 gap-4 content-center mt-5 mb-5" >
             <h3 class="text-center text-2xl font-bold font-poppins">
               Subscribe our fitness tips
@@ -241,7 +245,7 @@ import FooterFile from "./FooterFile.vue";
         </div>
       </div>
 
-      <FooterFile />
+       
     </div>
 
    
