@@ -27,7 +27,7 @@ import testview from "./testimonialView.vue";
         </button>
       </div>
 
-      <div class="mt-20 pr-5 md:pr-0  ">
+      <div class="md:mt-20 mt-24 pr-5 md:pr-0  ">
         <img src="/images/vid.jpg" class="h-1/12" />
       </div>
 
@@ -112,8 +112,8 @@ import testview from "./testimonialView.vue";
           need to reach your personal fitness goals – for free!
         </h6>
 
-        <h2 class="font-bold font-poppins">
-          <a href="" class="mt-10 text-[#35cdf1] space-x-10"
+        <h2 class="font-bold font-poppins ml-[17px] md:ml-0">
+          <a href="" class="md:mt-10 text-[#35cdf1] space-x-10"
             >See More <span class="fa fa-arrow-right text-white"></span>
           </a>
         </h2>
@@ -216,19 +216,19 @@ import testview from "./testimonialView.vue";
       </div>
 
       <div class="p-10 w-full flex justify-center ">
-        <div class="md:w-8/12 w-full rounded-lg subscribe ">
-          <div class="text-[#FAF6FD80] grid grid-cols-1 gap-4 content-center mt-5 mb-5" >
-            <h3 class="text-center text-2xl font-bold font-poppins">
+        <div class="md:w-12/12 w-full rounded-lg subscribe ">
+          <div class="text-[#FAF6FD80] grid grid-cols-1 gap-4 justify-items-center   mt-5 mb-5" >
+            <p class="  md:text-2xl font-bold font-poppins">
               Subscribe our fitness tips
-            </h3>
-            <p class="text-center font-poppins text-sm text-white">
+            </p>
+            <p class="  font-poppins text-[10px] md:text-sm text-center text-white">
               Clearly communicate the benefits of subscribing, such as exclusive
               <br />content and breaking news.
             </p>
-            <form class="flex justify-center w-full" >
-              <div class=" bg-white p-2 rounded-lg">
+            <form class="md:flex justify-center      " >
+              <div class=" md:bg-white p-2 rounded-lg w-full  space-x-2">
                 <input name="" id="" placeholder="Enter your email address" class="rounded p-2">
-                <button class="rounded bg-[#38D9F1] p-2 text-white">Subscribe <span class="fa fa-arrow-right"></span></button>
+                <button class="rounded bg-[#38D9F1] p-2 text-[10px] text-white subscribe-button">Subscribe  <span class="fa fa-arrow-right"></span></button>
                 </div>
              
             </form>
