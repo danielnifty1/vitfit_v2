@@ -47,7 +47,10 @@ let Links = [
       </div>
 
       <div class="ml-20">
-        <button class="rounded signup-button p-2">Join Us Now</button>
+
+        <router-link class="rounded signup-button p-2" to="Signup">Join Us Now</router-link>
+
+       
       </div>
     </ul>
 

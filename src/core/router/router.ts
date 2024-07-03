@@ -15,7 +15,7 @@ const contactpage=()=>import( "../../components/ContactPage.vue");
 // const buttons=()=>import("../../components/Buttons.vue");
 // const BreadCrumb=()=>import("../../components/BreadCrumb.vue");
 
-// const Regform=()=>import("../../components/Regform.vue");
+const Regform=()=>import("../../components/SignupPage.vue");
 const LoginPage=()=>import("../../components/LoginPage.vue");
 // const OtpPage=()=>import("../../components/OtpPage.vue");
 
@@ -33,7 +33,7 @@ const routes: Array<RouteRecordRaw> = [
 //    { path: "/verify-email",name:"verify", components: { default: OtpPage, NavBar: HeaderFile, FooterPage: FooterFile, } },
 
   { path: "/login", components: {default:LoginPage,NavBar:NavBar,FooterFile:FooterFile  }},
-//   { path: "/signup", components: { default: NewAccount, banner: banner, FooterPage: FooterPage } },
+  { path: "/signup", components: { default: Regform, NavBar:NavBar,FooterFile: FooterFile } },
 //   { path: "/register", components: { default: RegisterPage, banner: banner, FooterPage: FooterPage, } },
 
   // { path: "/secure/transfer", components: { dashheader: dashheader, sideBar:sideBar,default:transfer,baldash:dashboard  }},
