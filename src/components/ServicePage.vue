@@ -6,6 +6,6 @@ import { ref } from 'vue'
 <template>
 
     <div class="h-[500px]">
-<h1 class="text-white text-center font-poppins font-bold text-3xl">SERVICE PAGE</h1>
+        <h1 class="text-white text-center font-poppins font-bold text-3xl">SERVICE PAGE</h1>
     </div>
 </template>
