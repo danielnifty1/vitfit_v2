@@ -6,7 +6,9 @@ import testview from "./testimonialView.vue";
 
 
 import programslide from "./programslide.vue";
- 
+
+import TestProgram from "./testprogram.vue";
+
 
 </script>
 <template>
@@ -166,8 +168,8 @@ import programslide from "./programslide.vue";
     </div>
 
 
-
-    <programslide />
+    
+    <programslide /> 
 
     <div class="pl-20 mt-10 tgeneral">
       <div class="trangle-bg md:p-10 md:mt-10">
