@@ -6,6 +6,10 @@ function Menuopen() {
   open.value = !open.value;
 }
 
+function Closeopen() {
+  open.value = !open.value;
+}
+
 let Links = [
   { name: "Home", link: "home" },
   { name: "Services", link: "services" },
@@ -40,7 +44,7 @@ let Links = [
           v-for="link in Links"
           :key="link.name"
         >
-          <router-link class=" text-white" :to="link.link">{{
+          <router-link  @click="Closeopen()" class=" text-white" :to="link.link">{{
             link.name
           }}</router-link>
         </li>
