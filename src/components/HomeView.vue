@@ -215,17 +215,17 @@ import testview from "./testimonialView.vue";
         </div>
       </div>
 
-      <div class="p-10 w-full flex justify-center ">
+      <div class="p-10 w-full flex justify-center  ">
         <div class="md:w-12/12 w-full rounded-lg subscribe ">
-          <div class="text-[#FAF6FD80] grid grid-cols-1 gap-4 justify-items-center   mt-5 mb-5" >
-            <p class="  md:text-2xl font-bold font-poppins">
+          <div class="text-[#FAF6FD80] grid grid-cols-1 gap-4 justify-items-center   mt-5 mb-5 " >
+            <p class="  md:text-2xl font-bold font-poppins text-[12px]">
               Subscribe our fitness tips
             </p>
-            <p class="  font-poppins text-[10px] md:text-sm text-center text-white">
+            <p class="  font-poppins text-[8px] md:text-sm text-center text-white">
               Clearly communicate the benefits of subscribing, such as exclusive
               <br />content and breaking news.
             </p>
-            <form class="md:flex justify-center      " >
+            <form class="md:flex justify-center       " >
               <div class=" md:bg-white p-2 rounded-lg w-full  space-x-2">
                 <input name="" id="" placeholder="Enter your email address" class="rounded p-2">
                 <button class="rounded bg-[#38D9F1] p-2 text-[10px] text-white subscribe-button">Subscribe  <span class="fa fa-arrow-right"></span></button>
