@@ -5,7 +5,7 @@ import testimonialview from "./testimonialView.vue";
 import testview from "./testimonialView.vue";
 
 
-// import programslide from "./programslide.vue";
+import programslide from "./programslide.vue";
  
 
 </script>
@@ -165,20 +165,7 @@ import testview from "./testimonialView.vue";
       </div>
     </div>
 
-    <div class="grid grid-cols-2 gap-4 place-content-between p-10">
-      <div class="bgtext"></div>
 
-      <div class="md:grid grid-cols-2 place-items-end   hidden">
-        <div class="space-x-2">
-          <span
-            class="fa fa-arrow-left p-5 rounded-full border-white border-2 text-white hover:bg-[#35cdf1] hover:border-0"
-          ></span>
-          <span
-            class="fa fa-arrow-right p-5 rounded-full border-white border-2 text-white hover:bg-[#35cdf1] hover:border-0"
-          ></span>
-        </div>
-      </div>
-    </div>
 
     <programslide />
 
