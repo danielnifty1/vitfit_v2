@@ -26,7 +26,7 @@
   <div class="grid md:grid-cols-2 gap-4 place-content-between p-10">
     <div class="bgtext bg-cover bg-center bg-no-repeat md:p-20 ">
       <h1
-        class="font-bold md:text-[50px] text-xl   text-center md:text-left text-[#35cdf1] md:mt-10 font-poppins md:leading-[50px] p-10"
+        class="font-bold md:text-[45px] text-xl   text-center md:text-left text-[#35cdf1] md:mt-10 font-poppins md:leading-[50px] p-10"
       >
         Explore Our Program
       </h1>

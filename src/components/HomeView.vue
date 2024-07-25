@@ -232,7 +232,7 @@ import programslide from "./programslide.vue";
             COMING SOON!!!
           </h2>
 
-          <div class="grid grid-cols-1 space-y-5 place-items-center">
+          <div class="grid grid-cols-1 space-y-5 place-items-center md:place-items-start">
             <p class="font-bold text-white">Personalized Workout Plans</p>
             <p class="text-[#FAF6FD80] font-poppins">
               Tailored workout plans based on user goals (weight loss, muscle
