@@ -2,7 +2,7 @@
 // import { vue } from 'vue'
 
 import testimonialview from "./testimonialView.vue";
-import testview from "./testimonialView.vue";
+import testimonialMobile from "./testimonialMobile.vue";
 
 import programslide from "./programslide.vue";
 
@@ -204,15 +204,18 @@ import programslide from "./programslide.vue";
     <programslide />
 
     <!-- STORY -->
-    <div class="pl-20 mt-10 tgeneral">
+    <div class="md:pl-20 pl-10 mt-10 tgeneral">
       <div class="trangle-bg md:p-10 md:mt-10">
         <div class="md:h-98">
           <p class="text-center md:text-3xl font-bold font-poppins text-white">
             Vitfit Member’s Success <br />Story
           </p>
           <div class="  ">
-            <testimonialview slidePerview="2" class="hidden md:flex" />
-            <testview class="flex md:hidden" />
+            <testimonialview   class="hidden md:flex" />
+
+            <testimonialMobile   class=" md:hidden" />
+
+            
           </div>
         </div>
       </div>
@@ -228,11 +231,11 @@ import programslide from "./programslide.vue";
           >
             VITFIT APP
           </h2>
-          <h2 class="text-[#FFA800CC] md:text-6xl text-sm font-Pompiere text-center md:text-left">
+          <h2 class="text-[#FFA800CC] md:text-6xl text-sm font-Pompiere text-center md:text-left mb-5 md:mb-0">
             COMING SOON!!!
           </h2>
 
-          <div class="grid grid-cols-1 space-y-5 place-items-center md:place-items-start">
+          <div class="grid grid-cols-1 space-y-5 ">
             <p class="font-bold text-white">Personalized Workout Plans</p>
             <p class="text-[#FAF6FD80] font-poppins">
               Tailored workout plans based on user goals (weight loss, muscle
