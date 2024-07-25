@@ -99,7 +99,7 @@ export default {
         <div class="storyContainer w-full h-full">
           <img src="/images/story3.png" alt="image" />
           <div class="overlay-text w-full">
-            <div class="w-full mt-[1010]">
+            <div class="w-full mt-[110%]">
               <h2>Francis</h2>
               <div class="rating text-[#d29214]">
                 <i class="fa fa-star"></i>
@@ -124,7 +124,7 @@ export default {
         <div class="storyContainer w-full h-full">
           <img src="/images/story4.png" alt="image" />
           <div class="overlay-text w-full">
-            <div class="w-full mt-[100%]">
+            <div class="w-full mt-[110%]">
               <h2>Mercy</h2>
               <div class="rating text-[#d29214]">
                 <i class="fa fa-star"></i>
