@@ -10,6 +10,8 @@ import 'swiper/css/navigation';
 //   import './style.css';
 // import required modules
 import {EffectCoverflow,Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { User } from '../assets/types/user';
+ 
 
 export default {
   components: {
@@ -17,19 +19,28 @@ export default {
     SwiperSlide,
   },
   setup() {
+    
+
+
     return {
       modules: [EffectCoverflow,Autoplay, Pagination, Navigation],
+      
     };
   },
+  
+
 };
+
+ 
+      // console.log(title)
 </script>
 <template>
- 
+  
 
 
   <div class="w-full h-full  p-10">
   <swiper 
-  :slidesPerView="4"
+  :slidesPerView=4
   :spaceBetween="0"
   :autoplay="{
     delay: 2500,
@@ -42,7 +53,7 @@ export default {
  
   class="mySwiper  ">
   <swiper-slide class="w-full h-full bor der-4"> 
-    <div class="storyContai ner w-full h-full">
+    <div class="storyContainer w-full h-full">
             <img src="/images/story1.png" alt="image"  >
             <div class="overlay-text w-full ">
               <div class=" w-full mt-96">
@@ -52,7 +63,7 @@ export default {
                            <i class="fa fa-star" ></i>
                            <i class="fa fa-star" ></i>
                            <i class="fa fa-star" ></i>
-                           <i class="fa fa-star" ></i>
+                           <i class="fa fa-star" > </i>
 
                        </div>
                        <div>

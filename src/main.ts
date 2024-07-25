@@ -6,9 +6,9 @@ import { createPinia } from "pinia";
 import router from "./core/router/router";
 // import './core/utils/http_connection.axios';
 import './style.css'
-
+ 
 // initialize store
-const pinia = createPinia();
+const pinia = createPinia();    
 // create app
 const vitfitApp = createApp(App);
 vitfitApp.use(pinia);

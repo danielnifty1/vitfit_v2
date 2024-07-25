@@ -12,18 +12,19 @@ function Closeopen() {
 
 let Links = [
   { name: "Home", link: "home" },
+  { name: "About Us", link: "about" },
   { name: "Services", link: "services" },
   { name: "Programs", link: "programs" },
-  { name: "Contact", link: "contact" },
-  { name: "Login", link: "login" },
+  { name: "Contact Us", link: "contact" },
+  { name: "Book Appointment", link: "login" },
 ];
 </script>
 <template>
   <nav class="flex items-center bg-[#19092d] pt-5 pl-2 md:pt-0 w-full ">
     <div class="md:px-10 md:ml-10 flex space-x-2 ">
-      <img src="/images/logo.png" />
-      <h4 class="text-white font-bold text-[24px]">
-        VIT<span class="text-[#2598F1]">FIT</span>
+      <img src="/images/vitfit.png" />
+      <h4 class="text-[#2598F1] font-bold text-[24px]">
+        VIT<span class="">FIT</span>
       </h4>
       <span
         @click="Menuopen()"
@@ -40,11 +41,11 @@ let Links = [
     <hr class="mt-10" />
       <div class="md:flex md:space-x-10">
         <li
-          class=" mt-10 my-6 md:mt-0 md:my-0"
+          class=" mt-10 my-6 md:mt-0 md:my-0 text-[#7e7d7d] "
           v-for="link in Links"
           :key="link.name"
         >
-          <router-link  @click="Closeopen()" class=" text-white" :to="link.link">{{
+          <router-link  @click="Closeopen()" class=" " :to="link.link">{{
             link.name
           }}</router-link>
         </li>
