@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
-import {type User} from "./assets/types/user"
+ 
 
  
 

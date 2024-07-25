@@ -6,7 +6,7 @@ import testview from "./testimonialView.vue";
 
 import programslide from "./programslide.vue";
 
-import TestProgram from "./testprogram.vue";
+ 
 </script>
 <template>
   <div class=" ">
