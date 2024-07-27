@@ -2,6 +2,8 @@
 import { ref } from "vue";
 </script>
 <template>
+
+    
   <div class="grid grid-cols-1 pl-10 pr-10">
     <div class="abg bg-contain bg-center bg-no-repeat mt-10 p-10">
       <h1

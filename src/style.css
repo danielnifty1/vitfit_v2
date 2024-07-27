@@ -58,6 +58,16 @@
     overflow-y: hidden;
 }
 
+.programrectangle {
+    background-image: linear-gradient(275.59deg, rgba(25, 9, 45, 0) 21.62%, rgba(25, 9, 45, 0) 34.1%, #160827 78.06%),
+        linear-gradient(180deg, rgba(25, 9, 45, 0) 45.77%, #19092D 91.27%), url('/images/bk.png');
+     
+    border-radius: 50px;
+    overflow-y: hidden;
+}
+
+
+
 .feature {
     background: linear-gradient(116.71deg, rgba(250, 247, 253, 0.05) 3.21%, rgba(250, 246, 253, 0.04) 100%);
     width: Fixed (200px)px;
@@ -122,6 +132,17 @@ background-position:top;
 }
 .service{ 
     background-image: url("/images/service.png");
+}
+.programs{ 
+    background-image: url("/images/programs.png");
+}
+
+.program {
+    background: linear-gradient(116.71deg, rgba(250, 247, 253, 0.05) 3.21%, rgba(250, 246, 253, 0.04) 100%);
+   
+    opacity: 0px;
+
+
 }
 /* .bgtext:after { 
     margin: 3rem; 

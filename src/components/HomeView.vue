@@ -40,9 +40,7 @@ import programslide from "./programslide.vue";
     <!-- OUR SERVICES-->
     <div class="abt1">
       <div class="p-10 grid grid-cols-1 gap-4 place-items-center">
-        <div
-          class="rounded-md aboutrectangle md:p-20 grid grid-cols-1 gap-4 bg-cover bg-center bg-no-repeat"
-        >
+        <div class="rounded-md aboutrectangle md:p-20 grid grid-cols-1 gap-4 bg-cover bg-center bg-no-repeat" >
           <div class="md:space-y-28 space-y-5">
             <div class="space-y-5">
               <h3

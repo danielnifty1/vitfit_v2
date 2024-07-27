@@ -1,5 +1,13 @@
 <script setup lang="ts">
 // import { vue } from 'vue'
+let Links = [
+  { name: "Home", link: "home" },
+  { name: "About Us", link: "about" },
+  { name: "Services", link: "services" },
+  { name: "Programs", link: "programs" },
+  { name: "Contact Us", link: "contact" },
+  { name: "Book Appointment", link: "login" },
+];
 </script>
 <template>
     <div class=" md:p-10 abt1">
@@ -20,10 +28,18 @@
                     <div class="text-white">
                         <h1 class="font-bold font-poppins text-[#FAF6FD80]">Quick Link</h1>
                         <ul>
-                            <li><a>About Us</a></li>
-                            <li><a>Services</a></li>
-                            <li><a>Programs</a></li>
-                            <li><a>Help Center</a></li>
+
+                            <li  v-for="link in Links"
+                            :key="link.name">
+
+                            <router-link    class=" " :to="link.link">{{
+            link.name
+          }}</router-link>
+
+                            </li>
+
+
+                             
                         </ul>
                     </div>
 

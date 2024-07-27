@@ -148,6 +148,4 @@ import { ref } from "vue";
   
   </div>
 </template>
-<!-- <div class="md:p-10 grid gap-4 phone pl-5 mt-5 md:pl-0 md:mt-0  ">
-    <img src="/images/mobile.png" class=" " />
-  </div> -->
+ 
