@@ -120,6 +120,9 @@ background-position:top;
 .abg{ 
     background-image: url("/images/aboutfull.png");
 }
+.service{ 
+    background-image: url("/images/service.png");
+}
 /* .bgtext:after { 
     margin: 3rem; 
     content: "Background text"; 
