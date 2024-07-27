@@ -53,7 +53,7 @@ let Links = [
 
       <div class="ml-20">
 
-        <router-link class="rounded signup-button p-2" to="Signup">Join Us Now</router-link>
+        <router-link class="rounded signup-button p-2 text-white" to="Signup">Join Us Now</router-link>
 
        
       </div>

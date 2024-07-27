@@ -25,11 +25,7 @@ import programslide from "./programslide.vue";
           </h6>
         </div>
 
-        <button
-          class="rounded-xl text-white book-button md:text-xl pl-[20px] pr-[20px] pt-5 pb-5"
-        >
-          Book Appointment <span class="fa fa-arrow-right"></span>
-        </button>
+        <router-link class="rounded signup-button p-5 text-white" to="Signup">Book Appointment <span class="fa fa-arrow-right"></span></router-link>
       </div>
 
       <div class="md:mt-20 md:pr-20 pl-5 pr-5">
@@ -221,6 +217,7 @@ import programslide from "./programslide.vue";
       </div>
     </div>
 
+    <!-- APP COMING SOON -->
     <div class="appco ming">
       <div
         class="grid md:grid-cols-2 gap-4 md:p-10 md:pl-20 pr-10 p-2 mt-10 appcoming"

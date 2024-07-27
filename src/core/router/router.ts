@@ -9,6 +9,8 @@ const testimonialview=()=>import( "../../components/testimonialView.vue");
 const FooterFile=()=>import("../../components/FooterFile.vue");
 const ServicePage=()=>import("../../components/ServicePage.vue");
 const Programpage=()=>import( "../../components/ProgramPage.vue");
+const AboutPage=()=>import( "../../components/AboutPage.vue");
+
 
 
 const contactpage=()=>import( "../../components/ContactPage.vue");
@@ -26,6 +28,8 @@ const routes: Array<RouteRecordRaw> = [
   { path: "/home", name: "page.home", components: {default:HomeView, NavBar: NavBar,programslide:programslide,testimonialview:testimonialview,FooterFile:FooterFile}, },
   { path: "/services", name: "services", components: {default:ServicePage, NavBar: NavBar,FooterFile: FooterFile } },
   { path: "/programs", name: "programs", components: {default:Programpage, NavBar: NavBar,FooterFile: FooterFile } },
+  { path: "/about", name: "About Us", components: {default:AboutPage, NavBar: NavBar,FooterFile: FooterFile } },
+
 
 //   { path: "/services",name:"Programs", components: { default: Servicespage, NavBar: HeaderFile, banner: BreadCrumb, FooterPage: FooterFile, } },
    { path: "/contact",name:"Contact", components: { default: contactpage,NavBar: NavBar, FooterFile: FooterFile, } },

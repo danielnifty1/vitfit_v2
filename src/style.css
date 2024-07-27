@@ -116,6 +116,10 @@ background-position:top;
 .aboutbg{ 
     background-image: url("/images/aboutbg.png");
 } 
+
+.abg{ 
+    background-image: url("/images/aboutfull.png");
+}
 /* .bgtext:after { 
     margin: 3rem; 
     content: "Background text"; 
@@ -140,6 +144,7 @@ background: linear-gradient(116.71deg, rgba(250, 247, 253, 0.05) 3.21%, rgba(250
    .phone{
     background-image:  url('/images/vit.png');
     background-repeat: no-repeat;
+    ;
    }
  
     .testimonials-item .info {
