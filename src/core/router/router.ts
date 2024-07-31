@@ -10,6 +10,8 @@ const FooterFile=()=>import("../../components/FooterFile.vue");
 const ServicePage=()=>import("../../components/ServicePage.vue");
 const Programpage=()=>import( "../../components/ProgramPage.vue");
 const AboutPage=()=>import( "../../components/AboutPage.vue");
+const Bookappointment=()=>import( "../../components/BookAppointmentPage.vue");
+
 
 
 
@@ -33,6 +35,8 @@ const routes: Array<RouteRecordRaw> = [
 
 //   { path: "/services",name:"Programs", components: { default: Servicespage, NavBar: HeaderFile, banner: BreadCrumb, FooterPage: FooterFile, } },
    { path: "/contact",name:"Contact", components: { default: contactpage,NavBar: NavBar, FooterFile: FooterFile, } },
+   { path: "/appointment",name:"Book Appointment", components: { default: Bookappointment,NavBar: NavBar, FooterFile: FooterFile, } },
+
 //   { path: "/signup", components: { default: Regform, NavBar: HeaderFile, FooterPage: FooterFile,buttons:buttons } },
 //    { path: "/verify-email",name:"verify", components: { default: OtpPage, NavBar: HeaderFile, FooterPage: FooterFile, } },
 

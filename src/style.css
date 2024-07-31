@@ -136,7 +136,12 @@ background-position:top;
 .programs{ 
     background-image: url("/images/programs.png");
 }
-
+.contact{ 
+    background-image: url("/images/contact.png");
+}
+.book{ 
+    background-image: url("/images/book.png");
+}
 .program {
     background: linear-gradient(116.71deg, rgba(250, 247, 253, 0.05) 3.21%, rgba(250, 246, 253, 0.04) 100%);
    

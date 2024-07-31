@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "moment": "^2.30.1",
     "pinia": "^2.1.7",
     "swiper": "^11.1.4",
     "tw-elements": "^2.0.0",

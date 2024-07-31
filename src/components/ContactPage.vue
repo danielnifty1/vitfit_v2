@@ -2,8 +2,8 @@
 import { ref } from "vue";
 </script>
 <template>
-  <div class="grid grid-cols-1 p-24">
-    <div class="programs bg-contain bg-center bg-no-repeat mt-10 p-10">
+  <div class="grid grid-cols-1 pl-24 pr-24">
+    <div class="contact bg-contain bg-center bg-no-repeat mt- p-10">
       <h1
         class="font-bold md:text-[50px] md:text-4xl text-2xl text-center text-[#35cdf1] md:mt-10 font-poppins leading-[50px]"
       >

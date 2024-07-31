@@ -646,6 +646,11 @@ mitt@3.0.0:
   resolved "https://registry.npmjs.org/mitt/-/mitt-3.0.0.tgz"
   integrity sha512-7dX2/10ITVyqh4aOSVI9gdape+t9l2/8QxHrFmUXu4EEUpdlxl6RudZUPZoc+zuY2hk1j7XxVroIVIan/pD/SQ==
 
+moment@^2.30.1:
+  version "2.30.1"
+  resolved "https://registry.npmjs.org/moment/-/moment-2.30.1.tgz"
+  integrity sha512-uEmtNhbDOrWPFS+hdjFCBfy9f2YoyzRpwcl+DqpC6taX21FzsTLQVbMV/W7PzNSX6x/bhC1zA3c2UQ5NzH6how==
+
 muggle-string@^0.4.1:
   version "0.4.1"
   resolved "https://registry.npmjs.org/muggle-string/-/muggle-string-0.4.1.tgz"
