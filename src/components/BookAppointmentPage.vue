@@ -1,5 +1,8 @@
 <script setup lang="ts">
-import { ref } from "vue";
+import { defineAsyncComponent,ref } from "vue";
+
+const Calendar = defineAsyncComponent(()=> import('./calendar/index.vue'))
+ 
 </script>
 <template>
   <div class="grid grid-cols-1 pl-24 pr-24">
@@ -70,7 +73,10 @@ import { ref } from "vue";
         </div>
       </div>
 
-      <div class="w-8/12 bg-[#FAF6FD0D]  rounded-tr-xl rounded-br-xl">s</div>
+      <div class="w-8/12 bg-[#FAF6FD0D]  rounded-tr-xl rounded-br-xl">
+        <Calendar class="w-full" />
+
+      </div>
     </div>
   </div>
 </template>
