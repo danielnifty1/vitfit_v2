@@ -15,19 +15,19 @@ const   selectedValues=reactive({
     year:dayjs().year(),
 })
 
-function changeMonth(v){
-  selectedDateValue.value=null
+function changeMonth(v:number){
+  selectedDateValue.value=0
 selectedValues.month=v
 }
 
 
-function changeYear(v){
-  selectedDateValue.value=null
+function changeYear(v:number){
+  selectedDateValue.value=0
 
     selectedValues.year=v
 }
 
-function changeDate(v){
+function changeDate(v:number){
   selectedDateValue.value=v
 }
 </script>

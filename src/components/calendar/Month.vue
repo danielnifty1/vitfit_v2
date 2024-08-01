@@ -9,7 +9,7 @@ const month = ref<number>(dayjs().month())
 
 const cmonth =computed(()=>dayjs().month(month.value).format('MMMM'))
 
-function modifymonth(v){
+function modifymonth(v:number){
    
     month.value += v
 monthEmit('selected',month.value)

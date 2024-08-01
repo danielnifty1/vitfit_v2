@@ -61,8 +61,10 @@ for(let i = 1; i<=daysInMonth; i++){
 }
 }
 
-function selected(d){
-date.value=d
+function selected(d:number){
+
+date.value
+
 dateEmit('selected',d)
 }
 </script>
@@ -83,12 +85,12 @@ dateEmit('selected',d)
                 </div>
             </template>
 
-            <button class="w-9 h-9 rounded-full flex items-center justify-center text-sm font-semibold"
+            <button class="w-9 h-9 rounded-full flex items-center justify-center text-sm font-semibold hover:bg-green-650"
 
             @click="()=>selected(d.date)"
 
-            :class="{'bg-blue-900 text-white':(d.date==dayjs().date()&& dateProps.selectedValues.month==dayjs().month()&&dateProps.selectedValues.year==dayjs().year()),
-            'bg-emerald-500 text-gray-50 ring ring-green-700':d.date==date,
+            :class="{'bg-blue-900 text-white ':(d.date==dayjs().date()&& dateProps.selectedValues.month==dayjs().month()&&dateProps.selectedValues.year==dayjs().year()),
+            'bg-emerald-500 text-gray-50 ring ring-green-700 ':d.date==date,
             'bg-gray-300  ':d.date !=date 
             }">
             

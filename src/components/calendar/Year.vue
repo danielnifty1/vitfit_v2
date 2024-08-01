@@ -7,7 +7,7 @@ import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/vue/24/outline';
 const yearEmit = defineEmits<{(e:'selected', v:number):void}>()
 const year = ref<number>(dayjs().year())
 
-function modifyYear(v){
+function modifyYear(v:number){
    
     year.value += v
 yearEmit('selected',year.value)
