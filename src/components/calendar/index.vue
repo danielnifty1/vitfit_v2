@@ -33,8 +33,8 @@ function changeDate(v:number){
 </script>
 
 <template>
-  <div class="flex space-x-5" v-bind="$attrs">
-    <div class="flex flex-col flex-grow">
+  <div class="md:flex space-x-5" v-bind="$attrs">
+    <div class="md:flex flex-col flex-grow">
       <Year @selected="changeYear" />
       <Month @selected="changeMonth" />
       <Dates :selectedValues="selectedValues" :selectedDate="selectedDateValue" @selected="changeDate"/>

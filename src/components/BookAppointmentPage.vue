@@ -5,7 +5,7 @@ const Calendar = defineAsyncComponent(()=> import('./calendar/index.vue'))
  
 </script>
 <template>
-  <div class="grid grid-cols-1 pl-24 pr-24">
+  <div class="grid grid-cols-1 md:pl-24 md:pr-24">
     <div class="book bg-contain bg-center bg-no-repeat mt- p-10">
       <h1
         class="font-bold md:text-[50px] md:text-4xl text-2xl text-center text-[#35cdf1] md:mt-10 font-poppins leading-[50px]"
@@ -14,8 +14,8 @@ const Calendar = defineAsyncComponent(()=> import('./calendar/index.vue'))
       </h1>
     </div>
 
-    <div class="flex p-20 space-x-2 ">
-      <div class="w-4/12 bg-[#FAF6FD0D] pt-2 space-y-10 rounded-tl-xl rounded-bl-xl">
+    <div class="md:flex md:p-20 p-10 space-x-2 grid">
+      <div class="md:w-4/12 bg-[#FAF6FD0D] pt-2 space-y-10 rounded-tl-xl rounded-bl-xl hidden md:block">
         <div class="w-full">
           <div
             class="grid grid-cols-2 gap-0 text-white place-items-center p-2 w-full"
@@ -73,7 +73,7 @@ const Calendar = defineAsyncComponent(()=> import('./calendar/index.vue'))
         </div>
       </div>
 
-      <div class="w-8/12 bg-[#FAF6FD0D]  rounded-tr-xl rounded-br-xl">
+      <div class="md:w-8/12 bg-[#FAF6FD0D]  rounded-tr-xl rounded-br-xl">
         <Calendar class="w-full" />
 
       </div>
