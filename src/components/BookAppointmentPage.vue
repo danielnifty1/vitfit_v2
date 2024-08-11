@@ -2,7 +2,34 @@
 import { defineAsyncComponent } from "vue";
 import { ChevronLeftIcon } from '@heroicons/vue/24/outline';
 const Calendar = defineAsyncComponent(()=> import('./calendar/index.vue'))
- 
+ let time=[
+  {id:"1",time:"10: 00 AM"},
+  {id:"2",time:"10: 30 AM"},
+  {id:"3",time:"11: 00 AM"},
+  {id:"4",time:"11: 30 AM"},
+  {id:"5",time:"12: 00 PM"},
+  {id:"6",time:"12: 30 PM"},
+  {id:"7",time:"01: 00 PM"},
+  {id:"8",time:"01: 30 PM"},
+
+  {id:"9",time:"02: 00 PM"},
+
+  {id:"8",time:"02: 30 PM"},
+
+  {id:"9",time:"03: 00 PM"},
+
+  {id:"10",time:"03: 30 PM"},
+
+  {id:"11",time:"04: 00 PM"},
+
+  {id:"12",time:"04: 30 PM"},
+
+  {id:"13",time:"05: 00 PM"},
+
+  {id:"14",time:"05: 30 PM"},
+  {id:"15",time:"06: 00 PM"},
+  {id:"16",time:"06: 30 PM"},
+ ];
 </script>
 <template>
   <div class="grid grid-cols-1 md:pl-24 md:pr-24">
@@ -86,29 +113,9 @@ const Calendar = defineAsyncComponent(()=> import('./calendar/index.vue'))
           <div class="text-white pt-5 pl-10">
             <p class="text-[#FAF6FDB2]">Select Time </p>
 
-            <div class="grid grid-cols-3 place-items-center mt-5  ">
-              <span class="bg-[#FAF6FD0D] p-3 rounded-xl mb-2">
-                10:00 AM
-              </span>
-
-              <span class="bg-[#FAF6FD0D] p-3 rounded-xl mb-2">
-                10:00 AM
-              </span>
-
-              <span class="bg-[#FAF6FD0D] p-3 rounded-xl mb-2">
-                10:00 AM
-              </span>
-
-              <span class="bg-[#FAF6FD0D] p-3 rounded-xl mb-2">
-                10:00 AM
-              </span>
-
-              <span class="bg-[#FAF6FD0D] p-3 rounded-xl mb-2">
-                10:00 AM
-              </span>
-
-              <span class="bg-[#FAF6FD0D] p-3 rounded-xl mb-2">
-                10:00 AM
+            <div class="grid grid-cols-3 place-items-center mt-5"  >
+              <span class="bg-[#FAF6FD0D] p-3 rounded-xl mb-2 cursor-pointer hover:bg-[#35cdf1]" onclick="gettime()" v-for="times in time" :key="times.id">
+                {{times.time}}
               </span>
 
 
