@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { defineAsyncComponent } from "vue";
-import { ChevronLeftIcon } from "@heroicons/vue/24/outline";
+ 
 const Calendar = defineAsyncComponent(() => import("./calendar/index.vue"));
 
-const timezones = defineAsyncComponent(() => import("./timeZone.vue"));
+
 let time = [
   { id: "1", time: "10: 00 AM" },
   { id: "2", time: "10: 30 AM" },
@@ -184,7 +184,7 @@ let timeZone = [
 
             <div class="grid grid-cols-3 place-items-center mt-5">
               <span
-                class="bg-[#FAF6FD0D] p-3 rounded-xl mb-2 cursor-pointer hover:bg-[#35cdf1]"
+                class="bg-[#FAF6FD0D] md:p-3 p-1 md:rounded-sm rounded-sm mb-2 cursor-pointer hover:bg-[#35cdf1]"
                 onclick="gettime()"
                 v-for="times in time"
                 :key="times.id"
@@ -192,12 +192,24 @@ let timeZone = [
                 {{ times.time }}
               </span>
             </div>
-            <p class="text-[#FAF6FDB2] mt-5   ">Time Zone</p>
-              <select class=" w-full bg-[#FAF6FD0D] p-5 mt-2">
-                <option class="bg-[#FAF6FD0D] text-black" v-for="zone in timeZone" :key="zone.name">
-                  {{ zone.name }}
-                </option>
-              </select>
+            <p class="text-[#FAF6FDB2] mt-5">Time Zone</p>
+            <select class="w-full bg-[#FAF6FD0D] p-5 mt-2">
+              <option
+                class="bg-[#FAF6FD0D] text-black"
+                v-for="zone in timeZone"
+                :key="zone.name"
+              >
+                {{ zone.name }}
+              </option>
+            </select>
+
+            <div class=" mt-5 w-full">
+              <router-link
+                class="rounded signup-button p-2 text-white"
+                to="Signup"
+                >Continue</router-link
+              >
+            </div>
           </div>
         </div>
       </div>
