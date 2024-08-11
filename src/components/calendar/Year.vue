@@ -15,7 +15,7 @@ yearEmit('selected',year.value)
 </script>
 
 <template>
-    <div class="bg-[#19092d] p-3 rounded-t-md grid place-items-center mt-1 ml-1">
+    <div class="  p-2 rounded-t-md grid place-items-center md:mt-1 md:ml-1">
         <span class="flex items-center space-x-3 select-none text-white">
             <ChevronLeftIcon class="h-5 w-5 text-gray-400 cursor-pointer" @click="()=>modifyYear(-1)" />
                 <span class="">{{ year }}</span>

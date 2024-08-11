@@ -33,19 +33,20 @@ function changeDate(v:number){
 </script>
 
 <template>
-  <div class="md:flex space-x-5" v-bind="$attrs">
-    <div class="md:flex flex-col flex-grow">
+  <div class="  space-x-5 md:m-2  md:p-2 md:ml-2 pr-5   " v-bind="$attrs">
+    <h2 class="text-white font-bold ml-5 pb-5">Select Date</h2>
+    <div class="md:flex md:flex-col flex-grow rounded-md   bg-[#FAF6FD0D] ">
       <Year @selected="changeYear" />
       <Month @selected="changeMonth" />
       <Dates :selectedValues="selectedValues" :selectedDate="selectedDateValue" @selected="changeDate"/>
     </div>
 
-    <div class="w-1/2">
+    <!-- <div class="w-1/12">
         <span v-if="selectedDateValue">
             you have selected <br />
 
             {{ `${selectedDateValue}- ${selectedValues.month+1}-${selectedValues.year}` }}
         </span>
-    </div>
+    </div> -->
   </div>
 </template>

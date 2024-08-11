@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { defineAsyncComponent } from "vue";
-
+import { ChevronLeftIcon } from '@heroicons/vue/24/outline';
 const Calendar = defineAsyncComponent(()=> import('./calendar/index.vue'))
  
 </script>
@@ -73,8 +73,22 @@ const Calendar = defineAsyncComponent(()=> import('./calendar/index.vue'))
         </div>
       </div>
 
-      <div class="md:w-8/12 bg-[#FAF6FD0D]  rounded-tr-xl rounded-br-xl">
-        <Calendar class="w-full" />
+      <div class="md:w-10/12 bg-[#FAF6FD0D] grid grid-cols-1 rounded md:rounded-none   md:rounded-tr-xl md:rounded-br-xl ">
+        <div class="flex p-10 border-b-2 border-gray-700">
+          <!-- <ChevronLeftIcon class="h-8 w-8 text-gray-400 cursor-pointer rounded-full p-2 bg-[#FAF6FD0D] font-bold text-xl"   /> -->
+          <span class="fa fa-chevron-left h-8 w-8   cursor-pointer rounded-full p-2 bg-[#FAF6FD0D]  text-white"></span>
+          <h4 class="p-1 font-bold text-white">Date & Time</h4>
+         
+        </div>
+        <div class="grid md:grid-cols-2 place-items- md:p-2">
+          <Calendar class="w-full " />
+
+          <div class="text-white p-10">
+            HHH
+          </div>
+
+        </div>
+         
 
       </div>
     </div>

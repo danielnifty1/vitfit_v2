@@ -68,11 +68,11 @@ dateEmit('selected',d)
 </script>
 
 <template>
-<div class="w-full bg-gray-200 p-2 rounded-b-md">
+<div class="w-full  p-2 pl-1 ml-1 rounded-b-md">
 
     <div class="grid grid-cols-7 place-items-center gap-x-2 gap-y-4">
         <div v-for="day in days" :key="day">
-            <span class="text-gray-500 font-semibold" >{{ day.substr(0,3) }}</span>
+            <span class="text-gray-500 font-semibold" >{{ day.substr(0,2) }}</span>
         </div>
 
         <template v-for="(d, index ) in dates" :key="d">
@@ -87,9 +87,9 @@ dateEmit('selected',d)
 
             @click="()=>selected(d.date)"
 
-            :class="{'bg-blue-900 text-white hover:bg-blue-850':(d.date==dayjs().date()&& dateProps.selectedValues.month==dayjs().month()&&dateProps.selectedValues.year==dayjs().year()),
+            :class="{'bg-blue-700 text-white hover:bg-[#35cdf1]':(d.date==dayjs().date()&& dateProps.selectedValues.month==dayjs().month()&&dateProps.selectedValues.year==dayjs().year()),
             'bg-emerald-500 text-gray-50 ring ring-green-700 ':d.date==date,
-            'bg-gray-300  ':d.date !=date 
+            ' text-white  ':d.date !=date 
             }">
             
                             <span>
