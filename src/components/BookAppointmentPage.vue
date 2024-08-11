@@ -83,8 +83,37 @@ const Calendar = defineAsyncComponent(()=> import('./calendar/index.vue'))
         <div class="grid md:grid-cols-2 place-items- md:p-2">
           <Calendar class="w-full " />
 
-          <div class="text-white p-10">
-            HHH
+          <div class="text-white pt-5 pl-10">
+            <p class="text-[#FAF6FDB2]">Select Time </p>
+
+            <div class="grid grid-cols-3 place-items-center mt-5  ">
+              <span class="bg-[#FAF6FD0D] p-3 rounded-xl mb-2">
+                10:00 AM
+              </span>
+
+              <span class="bg-[#FAF6FD0D] p-3 rounded-xl mb-2">
+                10:00 AM
+              </span>
+
+              <span class="bg-[#FAF6FD0D] p-3 rounded-xl mb-2">
+                10:00 AM
+              </span>
+
+              <span class="bg-[#FAF6FD0D] p-3 rounded-xl mb-2">
+                10:00 AM
+              </span>
+
+              <span class="bg-[#FAF6FD0D] p-3 rounded-xl mb-2">
+                10:00 AM
+              </span>
+
+              <span class="bg-[#FAF6FD0D] p-3 rounded-xl mb-2">
+                10:00 AM
+              </span>
+
+
+              
+            </div>
           </div>
 
         </div>

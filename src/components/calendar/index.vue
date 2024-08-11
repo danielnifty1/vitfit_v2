@@ -34,7 +34,7 @@ function changeDate(v:number){
 
 <template>
   <div class="  space-x-5 md:m-2  md:p-2 md:ml-2 pr-5   " v-bind="$attrs">
-    <h2 class="text-white font-bold ml-5 pb-5">Select Date</h2>
+    <h2 class="text-[#FAF6FDB2] font-bold ml-5 pb-5">Select Date</h2>
     <div class="md:flex md:flex-col flex-grow rounded-md   bg-[#FAF6FD0D] ">
       <Year @selected="changeYear" />
       <Month @selected="changeMonth" />
