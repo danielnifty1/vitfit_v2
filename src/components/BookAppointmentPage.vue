@@ -179,13 +179,16 @@ let timeZone = [
         <div class="grid md:grid-cols-2 place-items- md:p-2">
           <Calendar class="w-full" />
 
-          <div class="text-white pt-5 pl-10">
+          <div class="text-white pt-5 pl-10 pr-5">
             <p class="text-[#FAF6FDB2]">Select Time</p>
 
             <div class="grid grid-cols-3 place-items-center mt-5">
+
+
+              
               <span
                 class="bg-[#FAF6FD0D] md:p-3 p-1 md:rounded-sm rounded-sm mb-2 cursor-pointer hover:bg-[#35cdf1]"
-                onclick="gettime()"
+               
                 v-for="times in time"
                 :key="times.id"
               >
@@ -206,10 +209,18 @@ let timeZone = [
             <div class=" mt-5 w-full">
               <router-link
                 class="rounded signup-button p-2 text-white"
-                to="Signup"
+                to="Signup?"
                 >Continue</router-link
               >
             </div>
+            <form class="hidden" >
+              <input id="selectedtime" placeholder="time " >
+              <input id="selectedtimezone" placeholder="time zone" >
+
+              <input id="selectedDate" placeholder="Date " >
+
+            </form>
+            
           </div>
         </div>
       </div>
