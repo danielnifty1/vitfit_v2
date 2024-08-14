@@ -155,12 +155,13 @@ const proceed = () => {
 </script>
 <template>
   <div class="grid grid-cols-1 md:pl-24 md:pr-24">
-    <div class="book bg-contain bg-center bg-no-repeat mt- p-10">
+    <div class="book bg-contain bg-center bg-no-repeat mt- p-10 space-y-2">
       <h1
         class="font-bold md:text-[50px] md:text-4xl text-2xl text-center text-[#35cdf1] md:mt-10 font-poppins leading-[50px]"
       >
         BOOK APPOINTMENT
       </h1>
+      <p class="text-center text-[#FAF6FD80] text-xl">Sign up and Arrange Your Free Consultation <br> Call here.</p>
     </div>
 
     <div class="md:flex md:p-20 p-10 space-x-2 grid">
@@ -295,13 +296,14 @@ const proceed = () => {
                   class="bg-black text-white"
                 />
               </div>
-              <button
-                @click="proceed"
-                type="submit"
-                class="rounded signup-button p-2 text-white"
-              >
-                Continue
-              </button>
+              <div class="flex mt-5 w-full md:justify-end justify-center p-5">
+            <button
+              @click="proceed"
+              class="rounded signup-button p-2 text-white"
+            >
+              Continue
+            </button>
+          </div>
             </div>
           </div>
         </div>

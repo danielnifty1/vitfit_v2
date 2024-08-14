@@ -1,5 +1,23 @@
 <script setup lang="ts">
 import { reactive } from "vue";
+import { useRoute, useRouter } from "vue-router";
+
+const route = useRoute();
+const router = useRouter();
+
+const selectedDate = route.query.date;
+const selectedTime = route.query.time;
+const selectedZone = route.query.zone;
+
+const selectedGender = route.query.gender;
+
+const selectedAge = route.query.age;
+
+const goal = route.query.goal;
+
+const services = route.query.services;
+
+const price = route.query.price;
 
 const userInfo = reactive({
   fullname: "",
@@ -19,10 +37,37 @@ const userInfo = reactive({
   SelectedTime: "",
 
   SelectedZone: "",
- 
 
   // email: "",
 });
+
+const proceed = () => {
+  const data = {
+    email: userInfo.email as string,
+    fullname: userInfo.fullname as string,
+    phone: userInfo.phone as string,
+
+    instagram: userInfo.instagram as string,
+
+    selectedDate: selectedDate as string,
+
+    selectedTime: selectedTime as string,
+
+    selectedZone: selectedZone as string,
+
+    selectedGender: selectedGender as string,
+
+    selectedAge: selectedAge as string,
+
+    goal: goal as string,
+
+    services: services as string,
+
+    price: price as string,
+  };
+
+  console.log(data)
+};
 </script>
 <template>
   <div class="grid grid-cols-1 md:pl-24 md:pr-24">
@@ -32,6 +77,10 @@ const userInfo = reactive({
       >
         BOOK APPOINTMENT
       </h1>
+      <p class="text-center text-[#FAF6FD80] text-xl">
+        Sign up and Arrange Your Free Consultation <br />
+        Call here.
+      </p>
     </div>
 
     <div class="md:flex md:p-20 p-10 space-x-2 grid">
@@ -105,56 +154,61 @@ const userInfo = reactive({
         </div>
 
         <div class="grid md:grid-cols-1 md:p-2 space-y-2">
-          <div class="grid grid-cols-2 gap-0">
-            <div class="grid p-10 space-y-2">
+          <div class="grid md:grid-cols-2 gap-0 space-y-5">
+            <div class="grid md:p-10 p-2 space-y-2">
               <span class="text-[#FAF6FDB2]"> Your Fullname </span>
               <input
                 v-model="userInfo.fullname"
-                class="p-4 bg-[#FAF6FD0D] rounded-xl"
+                class="p-4 bg-[#FAF6FD0D] text-white rounded-xl"
                 placeholder=" Your Fullname"
               />
             </div>
 
-            <div class="grid p-10 space-y-2">
+            <div class="grid md:p-10 p-2 space-y-2">
               <span class="text-[#FAF6FDB2]"> Your Email Address </span>
               <input
                 v-model="userInfo.email"
-                class="p-4 bg-[#FAF6FD0D] rounded-xl"
+                class="p-4 bg-[#FAF6FD0D] rounded-xl text-white"
                 placeholder="Email Address"
               />
             </div>
 
-            <div class="grid p-10 space-y-2">
+            <div class="grid md:p-10 p-2 space-y-2">
               <span class="text-[#FAF6FDB2]"> Your Phone Number </span>
               <input
                 v-model="userInfo.phone"
-                class="p-4 bg-[#FAF6FD0D] rounded-xl"
+                class="p-4 bg-[#FAF6FD0D] rounded-xl text-white"
                 placeholder="Phone Number"
               />
             </div>
 
-            <div class="grid p-10 space-y-2">
+            <div class="grid md:p-10 p-2 space-y-2">
               <span class="text-[#FAF6FDB2]">
                 What is Your Instagram usename?
               </span>
               <input
                 v-model="userInfo.instagram"
-                class="p-4 bg-[#FAF6FD0D] rounded-xl"
+                class="p-4 bg-[#FAF6FD0D] rounded-xl text-white"
                 placeholder="Instagram usename"
               />
             </div>
           </div>
 
-          <div class="flex p-10">
+          <div class="flex md:p-10 p-2 space-x-2 md:space-x-0">
             <input type="checkbox" />
-            <p class="p-5 text-[#FAF6FDB2] font-bold text-5sm">
+            <p class="md:p-5 text-[#FAF6FDB2] md:font-bold md:text-5sm">
               By providing my phone number, I agree to receive text messages
               from the business.Your Phone Number
             </p>
           </div>
 
-          <div class="flex mt-5 w-full justify-end p-5">
-            <button  class="rounded signup-button p-2  text-white">Continue</button>
+          <div class="flex mt-5 w-full md:justify-end justify-center p-5">
+            <button
+              @click="proceed"
+              class="rounded signup-button p-2 text-white"
+            >
+              Continue
+            </button>
           </div>
         </div>
       </div>

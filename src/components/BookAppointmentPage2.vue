@@ -108,7 +108,7 @@ const proceed = () => {
     return
   }
   
-  window.location.href = "/appointment3?date="+selectedDate+"&time="+selectedTime+"&zone="+selectedZone+"gender="+userInfo.SelectedGender+"age="+userInfo.SelectedAge+"goal="+userInfo.goal+"services="+userInfo.services+"price="+userInfo.price;
+  window.location.href = "/appointment3?date="+selectedDate+"&time="+selectedTime+"&zone="+selectedZone+"&gender="+userInfo.SelectedGender+"&age="+userInfo.SelectedAge+"&goal="+userInfo.goal+"&services="+userInfo.services+"&price="+userInfo.price;
 
 }
 </script>
@@ -120,6 +120,7 @@ const proceed = () => {
       >
         BOOK APPOINTMENT
       </h1>
+      <p class="text-center text-[#FAF6FD80] text-xl">Sign up and Arrange Your Free Consultation <br> Call here.</p>
     </div>
 
     <div class="md:flex md:p-20 p-10 space-x-2 grid">
@@ -250,7 +251,7 @@ const proceed = () => {
           </div>
 
           <div class="">
-            <p class="p-5 text-[#FAF6FDB2] leading-9 font-bold text-5sm">
+            <p class="p-5 text-[#FAF6FDB2] md:leading-9 md:font-bold text-5sm">
               The program requires a 12-week commitment and a one-time payment.
               My goal is to give you the tools and knowledge to reach your
               fitness goals without uncertainty. By the end, you'll have new
@@ -271,7 +272,7 @@ const proceed = () => {
             </span>
           </div>
 
-          <div class="flex mt-5 w-full justify-end">
+          <div class="flex mt-5 w-full md:justify-end justify-center">
             <button  @click="proceed" class="rounded signup-button p-2 text-white">Continue</button>
             
           </div>
