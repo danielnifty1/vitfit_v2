@@ -265,7 +265,7 @@ const proceed = () => {
                 </option>
                 <option
                   class="bg-[#FAF6FD0D] text-black"
-                  v-for="(zone, zoneid) in timeZone"
+                  v-for="(zone) in timeZone"
                   :key="zone.name"
                   :value="zone.name"
                 >

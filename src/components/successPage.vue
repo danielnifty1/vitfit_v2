@@ -1,25 +1,8 @@
 <script setup lang="ts">
-import { defineAsyncComponent } from "vue";
+ 
 
-const Calendar = defineAsyncComponent(() => import("./calendar/index.vue"));
-
-let gender = [
-  { id: 1, gender: "Male" },
-  { id: 2, gender: "Female" },
-  { id: 2, gender: "Other" },
-];
-let ageGap = [
-  { id: 1, age: "18-29" },
-  { id: 2, age: "30-39" },
-  { id: 3, age: "40-49" },
-  { id: 4, age: "50+" },
-];
-let price = [
-  { id: 1, price: "$100 - $200" },
-  { id: 2, price: "$200 - $300" },
-  { id: 3, price: "$300 - $400" },
-  { id: 4, price: "$400 - $500" },
-];
+ 
+ ;
 </script>
 <template>
   <div class="grid grid-cols-1 md:pl-24 md:pr-24 place-items-center">

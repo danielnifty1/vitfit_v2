@@ -1,10 +1,10 @@
 <script setup lang="ts">
 // import { defineAsyncComponent } from "vue";
-import { onMounted, reactive } from "vue";
-import { useRoute, useRouter } from "vue-router";
+import {  reactive } from "vue";
+import { useRoute } from "vue-router";
 
 const route = useRoute();
-const router = useRouter();
+
 const selectedDate = route.query.date;
 const selectedTime = route.query.time;
 const selectedZone = route.query.zone;
