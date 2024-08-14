@@ -51,12 +51,12 @@ let Links = [
         </li>
       </div>
 
-      <div class="ml-20">
+      <!-- <div class="ml-20">
 
         <router-link class="rounded signup-button p-2 text-white" to="Signup">Join Us Now</router-link>
 
        
-      </div>
+      </div> -->
     </ul>
 
   
