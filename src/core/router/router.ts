@@ -11,6 +11,10 @@ const ServicePage=()=>import("../../components/ServicePage.vue");
 const Programpage=()=>import( "../../components/ProgramPage.vue");
 const AboutPage=()=>import( "../../components/AboutPage.vue");
 const Bookappointment=()=>import( "../../components/BookAppointmentPage.vue");
+const Bookappointment2=()=>import( "../../components/BookAppointmentPage2.vue");
+const Bookappointment3=()=>import( "../../components/BookAppointmentPage3.vue");
+
+const successfullPage=()=>import ("../../components/successPage.vue")
 
 
 
@@ -36,7 +40,10 @@ const routes: Array<RouteRecordRaw> = [
 //   { path: "/services",name:"Programs", components: { default: Servicespage, NavBar: HeaderFile, banner: BreadCrumb, FooterPage: FooterFile, } },
    { path: "/contact",name:"Contact", components: { default: contactpage,NavBar: NavBar, FooterFile: FooterFile, } },
    { path: "/appointment",name:"Book Appointment", components: { default: Bookappointment,NavBar: NavBar, FooterFile: FooterFile, } },
+   { path: "/appointment2",name:"Book Appointment Step 2", components: { default: Bookappointment2,NavBar: NavBar, FooterFile: FooterFile, } },
+   { path: "/appointment3",name:"Book Appointment Step 3", components: { default: Bookappointment3,NavBar: NavBar, FooterFile: FooterFile, } },
 
+   { path: "/successful",name:"Book Appointment Successful", components: { default: successfullPage,NavBar: NavBar, FooterFile: FooterFile, } },
 //   { path: "/signup", components: { default: Regform, NavBar: HeaderFile, FooterPage: FooterFile,buttons:buttons } },
 //    { path: "/verify-email",name:"verify", components: { default: OtpPage, NavBar: HeaderFile, FooterPage: FooterFile, } },
 

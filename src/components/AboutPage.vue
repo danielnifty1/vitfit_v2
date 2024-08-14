@@ -1,5 +1,15 @@
 <script setup lang="ts">
 import { ref } from "vue";
+let testimony=[
+  {
+    
+    id:"1",icon:"/images/1coaching.png",name:"Ogechi Prisca", title:"Actor ",text:"With over 20 years in the fitness industry, Bright has dedicated his career to helping people achieve their health and wellness goals. As the co-founder of VITFIT, Bright’s vision is to create a supportive community where everyone can thrive. He holds a Master’s degree in Exercise Science and is a certified personal trainer."},
+
+   { id:"2",icon:"/images/1coaching.png",name:"Ogechi Prisca", title:"Actor ",text:"With over 20 years in the fitness industry, Bright has dedicated his career to helping people achieve their health and wellness goals. As the co-founder of VITFIT, Bright’s vision is to create a supportive community where everyone can thrive. He holds a Master’s degree in Exercise Science and is a certified personal trainer."},
+
+    { id:"3",icon:"/images/1coaching.png",name:"Ogechi Prisca", title:"Actor ",text:"With over 20 years in the fitness industry, Bright has dedicated his career to helping people achieve their health and wellness goals. As the co-founder of VITFIT, Bright’s vision is to create a supportive community where everyone can thrive. He holds a Master’s degree in Exercise Science and is a certified personal trainer."},
+
+];
 </script>
 <template>
 
@@ -52,7 +62,7 @@ import { ref } from "vue";
     <p class="md:text-2xl text-sm text-[#7e7d7d] text-center">
       VITFIT mission is to make fitness accessible <br />to everyone
     </p>
-    <router-link class="rounded signup-button p-2 text-white" to="Signup"
+    <router-link class="rounded signup-button p-2 text-white" to="appointment"
       >Book Appointment <span class="fa fa-arrow-right"></span
     ></router-link>
   </div>
@@ -89,12 +99,15 @@ import { ref } from "vue";
     </div>
 
     <div class="grid md:grid-cols-3 p-20 space-y-5 border-b border-gray-900">
-      <div class="grid border-l">
+
+
+      <div class="grid border-l"  v-for="testimonies in testimony"
+      :key="testimonies.id">
         <div class="flex p-5 space-x-5">
-          <img src="/images/about.png" class="rounded-full w-[50px] h-[50px]" />
+          <img :src="testimonies.icon" class="rounded-full w-[50px] h-[50px]" />
           <div class="grid">
-            <h1 class="font-bold text-white">Ogechi Prisca</h1>
-            <p class="text-[#7e7d7d] text-sm">Actor</p>
+            <h1 class="font-bold text-white">{{testimonies.name}}</h1>
+            <p class="text-[#7e7d7d] text-sm">{{testimonies.title}}</p>
           </div>
         </div>
 
@@ -102,58 +115,12 @@ import { ref } from "vue";
           <p class="text-[#7e7d7d]">
             <b class="text-[#2598F1] text-2xl">"</b>
 
-            With over 20 years in the fitness industry, Bright has dedicated his
-            career to helping people achieve their health and wellness goals. As
-            the co-founder of VITFIT, Bright’s vision is to create a supportive
-            community where everyone can thrive. He holds a Master’s degree in
-            Exercise Science and is a certified personal trainer.
+           {{ testimonies.text }}
           </p>
         </div>
       </div>
 
-      <div class="grid border-l">
-        <div class="flex p-5 space-x-5">
-          <img src="/images/about.png" class="rounded-full w-[50px] h-[50px]" />
-          <div class="grid">
-            <h1 class="font-bold text-white">Ogechi Prisca</h1>
-            <p class="text-[#7e7d7d] text-sm">Actor</p>
-          </div>
-        </div>
-
-        <div class="p-5">
-          <p class="text-[#7e7d7d]">
-            <b class="text-[#2598F1] text-2xl">"</b>
-
-            With over 20 years in the fitness industry, Bright has dedicated his
-            career to helping people achieve their health and wellness goals. As
-            the co-founder of VITFIT, Bright’s vision is to create a supportive
-            community where everyone can thrive. He holds a Master’s degree in
-            Exercise Science and is a certified personal trainer.
-          </p>
-        </div>
-      </div>
-
-      <div class="grid border-l">
-        <div class="flex p-5 space-x-5">
-          <img src="/images/about.png" class="rounded-full w-[50px] h-[50px]" />
-          <div class="grid">
-            <h1 class="font-bold text-white">Ogechi Prisca</h1>
-            <p class="text-[#7e7d7d] text-sm">Actor</p>
-          </div>
-        </div>
-
-        <div class="p-5">
-          <p class="text-[#7e7d7d]">
-            <b class="text-[#2598F1] text-2xl">"</b>
-
-            With over 20 years in the fitness industry, Bright has dedicated his
-            career to helping people achieve their health and wellness goals. As
-            the co-founder of VITFIT, Bright’s vision is to create a supportive
-            community where everyone can thrive. He holds a Master’s degree in
-            Exercise Science and is a certified personal trainer.
-          </p>
-        </div>
-      </div>
+     
     </div>
   </div>
   <!-- OUR GALLARY -->

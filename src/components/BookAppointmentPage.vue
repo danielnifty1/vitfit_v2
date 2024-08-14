@@ -1,8 +1,17 @@
 <script setup lang="ts">
-import { defineAsyncComponent } from "vue";
- 
-const Calendar = defineAsyncComponent(() => import("./calendar/index.vue"));
+import { isEmptyBindingElement } from "typescript";
+import { defineAsyncComponent, reactive } from "vue";
 
+const userInfo = reactive({
+  SelectedDate: "",
+  SelectedTime: "",
+
+  SelectedZone: "",
+
+  // email: "",
+});
+
+const Calendar = defineAsyncComponent(() => import("./calendar/index.vue"));
 
 let time = [
   { id: "1", time: "10: 00 AM" },
@@ -96,6 +105,53 @@ let timeZone = [
   { name: "(GMT +13:00) Apia, Nukualofa", value: "+13:00" },
   { name: "(GMT +14:00) Line Islands, Tokelau", value: "+14:00" },
 ];
+
+// methods
+const getTime = (timeIndex: number) => {
+  const actualTime = time[timeIndex];
+  userInfo.SelectedTime = actualTime.time;
+};
+
+const getZone = () => {
+  let usernameInput: HTMLInputElement = document.getElementById(
+    "timezone"
+  ) as HTMLInputElement;
+
+  userInfo.SelectedZone = usernameInput.value;
+};
+
+
+
+const setDate = (date: string) => {
+  userInfo.SelectedDate = date;
+};
+
+
+
+const proceed = () => {
+  if (userInfo.SelectedDate == "") {
+    return
+  }
+
+  if (userInfo.SelectedTime == "") {
+    return
+  }
+
+  if (
+    userInfo.SelectedZone == "" ||
+    userInfo.SelectedZone == "SELECT TIME ZONE"
+  ) {
+    return
+  } 
+
+   window.location.href = "/appointment2?date="+userInfo.SelectedDate+"&time="+userInfo.SelectedTime+"&zone="+userInfo.SelectedZone;
+
+  // setTimeout(() => {
+  //       window.location.href = "/verify-email";
+  //     }, 3000);
+};
+
+// emits
 </script>
 <template>
   <div class="grid grid-cols-1 md:pl-24 md:pr-24">
@@ -177,50 +233,76 @@ let timeZone = [
           <h4 class="p-1 font-bold text-white">Date & Time</h4>
         </div>
         <div class="grid md:grid-cols-2 place-items- md:p-2">
-          <Calendar class="w-full" />
+          <Calendar class="w-full" @onSetDate="setDate" />
 
           <div class="text-white pt-5 pl-10 pr-5">
             <p class="text-[#FAF6FDB2]">Select Time</p>
 
             <div class="grid grid-cols-3 place-items-center mt-5">
-
-
-              
               <span
-                class="bg-[#FAF6FD0D] md:p-3 p-1 md:rounded-sm rounded-sm mb-2 cursor-pointer hover:bg-[#35cdf1]"
+                @click="getTime(index)"
                
-                v-for="times in time"
+                class="bg-[#FAF6FD0D] md:p-3 p-1 md:rounded-sm rounded-sm mb-2 cursor-pointer hover:bg-[#35cdf1]"
+                v-for="(times, index) in time"
                 :key="times.id"
               >
                 {{ times.time }}
               </span>
             </div>
             <p class="text-[#FAF6FDB2] mt-5">Time Zone</p>
-            <select class="w-full bg-[#FAF6FD0D] p-5 mt-2">
-              <option
+            <select
+              @change="getZone()"
+              id="timezone"
+              class="w-full bg-[#FAF6FD0D] p-5 mt-2"
+            >
+              <optgroup
                 class="bg-[#FAF6FD0D] text-black"
-                v-for="zone in timeZone"
-                :key="zone.name"
+                label="SELECT TIME ZONE"
               >
-                {{ zone.name }}
-              </option>
+                <option class="bg-[#FAF6FD0D] text-black">
+                  SELECT TIME ZONE
+                </option>
+                <option
+                  class="bg-[#FAF6FD0D] text-black"
+                  v-for="(zone, zoneid) in timeZone"
+                  :key="zone.name"
+                  :value="zone.name"
+                >
+                  {{ zone.name }}
+                </option>
+              </optgroup>
             </select>
 
-            <div class=" mt-5 w-full">
-              <router-link
+            <div class="mt-5 w-full flex justify-end">
+              <div class="hidden">
+                <input
+                  v-model="userInfo.SelectedDate"
+                  id="selectedtime"
+                  placeholder="Date "
+                  class="bg-black text-white"
+                />
+                <input
+                  v-model="userInfo.SelectedZone"
+                  id="selectedtimezone"
+                  placeholder="time zone"
+                  class="bg-black text-white"
+                />
+
+                <input
+                  v-model="userInfo.SelectedTime"
+                  id="selectedDate"
+                  placeholder="Date "
+                  class="bg-black text-white"
+                />
+              </div>
+              <button
+                @click="proceed"
+                type="submit"
                 class="rounded signup-button p-2 text-white"
-                to="Signup?"
-                >Continue</router-link
               >
+                Continue
+              </button>
             </div>
-            <form class="hidden" >
-              <input id="selectedtime" placeholder="time " >
-              <input id="selectedtimezone" placeholder="time zone" >
-
-              <input id="selectedDate" placeholder="Date " >
-
-            </form>
-            
           </div>
         </div>
       </div>

@@ -1,7 +1,13 @@
 <script setup lang="ts">
 import dayjs from "dayjs";
  
-import { defineAsyncComponent,reactive,ref} from "vue";
+import { defineAsyncComponent,reactive,ref, defineEmits} from "vue";
+
+// emits
+const emit = defineEmits<{
+
+  onSetDate: [value: string] // named tuple syntax
+}>()
 
 const Year = defineAsyncComponent(() => import("./Year.vue"));
 const Dates = defineAsyncComponent(() => import("./Dates.vue"));
@@ -28,8 +34,12 @@ function changeYear(v:number){
 }
 
 function changeDate(v:number){
+  // console.log('this was fired'),
   selectedDateValue.value=v
+  emit('onSetDate', `${selectedDateValue.value}-${selectedValues.month+1}-${selectedValues.year}`)
+
 }
+
 </script>
 
 <template>

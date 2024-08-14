@@ -6,7 +6,7 @@ let Links = [
   { name: "Services", link: "services" },
   { name: "Programs", link: "programs" },
   { name: "Contact Us", link: "contact" },
-  { name: "Book Appointment", link: "login" },
+  { name: "Book Appointment", link: "appointment" },
 ];
 </script>
 <template>
