@@ -1,8 +1,7 @@
 <script setup lang="ts">
- 
-
- 
- ;
+const proceed = () => {
+  window.location.replace('home')
+}
 </script>
 <template>
   <div class="grid grid-cols-1 md:pl-24 md:pr-24 place-items-center">
@@ -13,7 +12,7 @@
 
         <p class="text-center text-[#FAF6FD80]">Thank for Arranging Your Free Consultation Call with VITFITYou will soon receive a text and email confirmation to inform you that we have successfully received your application.</p>
 
-        <button class="bg-[#2598F1] p-2 pl-4 pr-4 rounded-sm text-white">ok</button>
+        <button @click="proceed()" class="bg-[#2598F1] p-2 pl-4 pr-4 rounded-sm text-white">ok</button>
     </div>
   </div>
 </template>
