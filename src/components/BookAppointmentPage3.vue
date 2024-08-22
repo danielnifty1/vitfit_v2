@@ -1,8 +1,14 @@
 <script setup lang="ts">
-import { reactive } from "vue";
+import { reactive, ref } from "vue";
 import { useRoute } from "vue-router";
+import { useAuth } from "../composable/auth.composable";
+import { useAuthStore } from "../core/store";
 
 const route = useRoute();
+const store = useAuthStore();
+const loading = ref(false);
+const disabled = ref(false);
+
  
 
 const selectedDate = route.query.date;
@@ -41,7 +47,7 @@ const userInfo = reactive({
   // email: "",
 });
 
-const proceed = () => {
+const proceed = async (): Promise<void> => {
   const data = {
     email: userInfo.email as string,
     fullname: userInfo.fullname as string,
@@ -64,9 +70,23 @@ const proceed = () => {
     services: services as string,
 
     price: price as string,
+ 
+
   };
-console.log(data)
- window.location.href = "/successful"
+  
+  const [error, success] = await useAuth(store.userRegister(data), loading);
+
+  if (success || error) {
+      disabled.value = false;
+    }
+    if (success.value !== "") {
+      //   redirect to the signin page
+      setTimeout(() => {
+        window.location.href = "/successful";
+      }, 3000);
+    }
+  
+ 
 };
 </script>
 <template>
