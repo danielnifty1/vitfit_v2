@@ -75,7 +75,7 @@ const response =await axios.post('user/contactus',data)
             name="usernam"
             id="usernam"
             autocomplete="usernam"
-            class="p-4 rounded bg-[#2f2c4d] border border-[#7e7d7d] w-full"
+            class="p-4 rounded bg-[#2f2c4d] border border-[#7e7d7d] w-full text-white"
             placeholder="name"
           />
 
@@ -85,7 +85,7 @@ const response =await axios.post('user/contactus',data)
             name="usernam"
             id="usernam"
             autocomplete="usernam"
-            class="p-4 rounded bg-[#2f2c4d] border border-[#7e7d7d] w-full"
+            class="p-4 rounded bg-[#2f2c4d] border border-[#7e7d7d] w-full text-white"
             placeholder="phone"
           />
 
@@ -95,13 +95,13 @@ const response =await axios.post('user/contactus',data)
             name="usernam"
             id="usernam"
             autocomplete="usernam"
-            class="shadow-xl p-4 rounded bg-[#2f2c4d] border border-[#7e7d7d] w-full"
+            class="shadow-xl p-4 rounded bg-[#2f2c4d] border border-[#7e7d7d] w-full text-white"
             placeholder="Email Address"
           />
 
           <textarea
           v-model="userInfo.Message"
-            class="bg-[#2f2c4d] border border-[#7e7d7d] w-full h-[200px] rounded-xl p-4"
+            class="bg-[#2f2c4d] border border-[#7e7d7d] w-full text-white h-[200px] rounded-xl p-4"
             placeholder="message"
           >
           </textarea>
