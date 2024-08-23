@@ -46,7 +46,7 @@ const response =await axios.post('user/contactus',data)
   loader[0].style.display = "none";
 }
   });
-
+console.log(response)
 
 // await this.request.post("/user/booking", data, {});
 
