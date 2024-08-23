@@ -1,5 +1,26 @@
 <script setup lang="ts">
+import { reactive } from 'vue';
+
 // import { ref } from "vue";
+const userInfo = reactive({
+  fullname: "",
+  email: "",
+
+  phone: "",
+  Message: "",
+
+  
+
+  // email: "",
+});
+
+const proceed = async (): Promise<void> => {
+let shand = document.getElementsByClassName('s-hand') as HTMLCollectionOf<HTMLElement>;
+
+if (shand.length != 0) {
+  shand[0].style.transform = "translate(-50%, -100%) rotate(" + s * 6 + "deg)";
+}
+}
 </script>
 <template>
   <div class="grid grid-cols-1 pl-24 pr-24">
@@ -19,6 +40,7 @@
       <div class="p-10 rounded-xl space-y-5 program w-6/12">
         <form class="flex-1 space-y-5">
           <input
+          v-model="userInfo.fullname"
             type="text"
             name="usernam"
             id="usernam"
@@ -28,6 +50,7 @@
           />
 
           <input
+          v-model="userInfo.email"
             type="text"
             name="usernam"
             id="usernam"
@@ -37,6 +60,7 @@
           />
 
           <input
+          v-model="userInfo.phone"
             type="text"
             name="usernam"
             id="usernam"
@@ -46,13 +70,14 @@
           />
 
           <textarea
+          v-model="userInfo.Message"
             class="bg-[#2f2c4d] border border-[#7e7d7d] w-full h-[200px] rounded-xl"
             placeholder="phone"
           >
           </textarea>
 
-          <button class="bg-[#35cdf1] w-full p-5 rounded-xl text-white">
-            submit
+          <button  @click="proceed" class="bg-[#35cdf1] w-full p-5 rounded-xl text-white">
+            submit <span class="fa fa-spin fa-spin"></span>
           </button>
         </form>
       </div>
