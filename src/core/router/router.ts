@@ -9,6 +9,9 @@ const testimonialview=()=>import( "../../components/testimonialView.vue");
 const FooterFile=()=>import("../../components/FooterFile.vue");
 const ServicePage=()=>import("../../components/ServicePage.vue");
 const Programpage=()=>import( "../../components/ProgramPage.vue");
+const ProgramDetailpage=()=>import( "../../components/ProgramDetailsPage.vue");
+
+
 const AboutPage=()=>import( "../../components/AboutPage.vue");
 const Bookappointment=()=>import( "../../components/BookAppointmentPage.vue");
 const Bookappointment2=()=>import( "../../components/BookAppointmentPage2.vue");
@@ -34,6 +37,8 @@ const routes: Array<RouteRecordRaw> = [
   { path: "/home", name: "page.home", components: {default:HomeView, NavBar: NavBar,programslide:programslide,testimonialview:testimonialview,FooterFile:FooterFile}, },
   { path: "/services", name: "services", components: {default:ServicePage, NavBar: NavBar,FooterFile: FooterFile } },
   { path: "/programs", name: "programs", components: {default:Programpage, NavBar: NavBar,FooterFile: FooterFile } },
+  { path: "/programdetail", name: "programs Details", components: {default:ProgramDetailpage, NavBar: NavBar,FooterFile: FooterFile } },
+
   { path: "/about", name: "About Us", components: {default:AboutPage, NavBar: NavBar,FooterFile: FooterFile } },
 
 

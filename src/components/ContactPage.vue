@@ -31,10 +31,21 @@ const data = {
     message: userInfo.Message as string,
 }
 // https://vitfitv2server.onrender.com/v1/localhost:8080/v1/user/contactus
-const response =await axios.post('user/contactus',data)
+const responsed =await axios.post('user/contactus',data,
+{
+      method: 'POST',
+    
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+        'Content-Type': 'application/json',
+      },
+   
+   
+    }
+)
 .then(response => {
     // Handle the success response
-    console.log(response.data.message); // Prints "Hello, world!"
+    console.log(response.data); // Prints "Hello, world!"
     if (loader.length != 0) {
   loader[0].style.display = "none";
 }
@@ -46,7 +57,7 @@ const response =await axios.post('user/contactus',data)
   loader[0].style.display = "none";
 }
   });
-console.log(response)
+console.log(responsed)
 
 // await this.request.post("/user/booking", data, {});
 

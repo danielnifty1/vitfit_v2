@@ -39,7 +39,7 @@ import { ref } from "vue";
         stay on track, and achieve their fitness goals effectively.
       </p>
 
-      <router-link class="rounded signup-button p-2 text-white" to="Signup"
+      <router-link class="rounded signup-button p-2 text-white" to="appointment"
         >Apply Now</router-link
       >
     </div>
@@ -61,7 +61,7 @@ import { ref } from "vue";
         nutritious and delicious meals into their daily routine.
       </p>
 
-      <router-link class="rounded signup-button p-2 text-white" to="Signup"
+      <router-link class="rounded signup-button p-2 text-white" to="appointment"
         >Apply Now</router-link
       >
     </div>
@@ -92,7 +92,7 @@ import { ref } from "vue";
         training options
       </p>
 
-      <router-link class="rounded signup-button p-2 text-white" to="Signup"
+      <router-link class="rounded signup-button p-2 text-white" to="appointment"
         >Apply Now</router-link
       >
     </div>
@@ -114,7 +114,7 @@ import { ref } from "vue";
         clients make healthier food choices and sustain their fitness journey.
       </p>
 
-      <router-link class="rounded signup-button p-2 text-white" to="Signup"
+      <router-link class="rounded signup-button p-2 text-white" to="appointment"
         >Apply Now</router-link
       >
     </div>

@@ -27,7 +27,7 @@ import { ref } from "vue";
           <div>
             <router-link
               class="rounded signup-button p-2 text-white mt-10"
-              to="Signup"
+              to="programdetail"
               >See More</router-link
             >
           </div>
@@ -45,7 +45,7 @@ import { ref } from "vue";
           <div>
             <router-link
               class="rounded signup-button p-2 text-white mt-10"
-              to="Signup"
+              to="programdetail"
               >See More</router-link
             >
           </div>
@@ -63,7 +63,7 @@ import { ref } from "vue";
           <div>
             <router-link
               class="rounded signup-button p-2 text-white mt-10"
-              to="Signup"
+              to="programdetail"
               >See More</router-link
             >
           </div>
@@ -83,7 +83,7 @@ import { ref } from "vue";
           <div>
             <router-link
               class="rounded signup-button p-2 text-white mt-10"
-              to="Signup"
+              to="programdetail"
               >See More</router-link
             >
           </div>
@@ -101,7 +101,7 @@ import { ref } from "vue";
           <div>
             <router-link
               class="rounded signup-button p-2 text-white mt-10"
-              to="Signup"
+              to="programdetail"
               >See More</router-link
             >
           </div>
@@ -119,7 +119,7 @@ import { ref } from "vue";
           <div>
             <router-link
               class="rounded signup-button p-2 text-white mt-10"
-              to="Signup"
+              to="programdetail"
               >See More</router-link
             >
           </div>
@@ -166,7 +166,7 @@ import { ref } from "vue";
         <div class="flex">
           <router-link
             class="rounded signup-button w-full p-5 text-center text-white"
-            to="Signup"
+            to="appointment"
             >Book Appointment</router-link
           >
         </div>
