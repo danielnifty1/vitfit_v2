@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { isEmptyBindingElement } from "typescript";
+// import { isEmptyBindingElement } from "typescript";
 import { defineAsyncComponent, reactive } from "vue";
 
 const userInfo = reactive({

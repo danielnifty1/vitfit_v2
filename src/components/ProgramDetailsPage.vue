@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { reactive, ref } from "vue";
+import { reactive } from "vue";
 import * as programs from "../core/static_files/programs.json";
 
 import axios from "axios";
