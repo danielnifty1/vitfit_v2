@@ -95,8 +95,8 @@ const proceed = async (): Promise<void> => {
       </h1>
     </div>
 
-    <div class="grid grid-cols-2">
-      <div class="p-10">
+    <div class="grid md:grid-cols-2">
+      <div class="md:p-10">
         <img :src="programdata.img" />
 
         <p class="text-white mt-5 mb-5">{{ programdata.subtitle }}</p>
@@ -118,7 +118,7 @@ const proceed = async (): Promise<void> => {
       </div>
     </div>
 
-    <div class="grid grid-cols-2 gap-2 p-10 place-items-center">
+    <div class="grid md:grid-cols-2 gap-2 md:p-10 place-items-center">
       <div class="grid grid-cols-2 gap-2">
         <div class="grid place-items-end">
           <img src="/images/pdetails1.png" c />

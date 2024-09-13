@@ -2,11 +2,11 @@
 // import { vue } from 'vue'
 let Links = [
   { name: "Home", link: "home" },
-  { name: "About Us", link: "about" },
+  { name: "About", link: "about" },
   { name: "Services", link: "services" },
   { name: "Programs", link: "programs" },
-  { name: "Contact Us", link: "contact" },
-  { name: "Book Appointment", link: "appointment    " },
+//   { name: "Contact Us", link: "contact" },
+//   { name: "Book Appointment", link: "appointment    " },
 ];
 </script>
 <template>
@@ -29,7 +29,7 @@ let Links = [
                         <h1 class="font-bold font-poppins text-[#FAF6FD80]">Quick Link</h1>
                         <ul>
 
-                            <li  v-for="link in Links"
+                            <li class="text-sm" v-for="link in Links"
                             :key="link.name">
 
                             <router-link    class=" " :to="link.link">{{

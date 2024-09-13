@@ -25,7 +25,7 @@ import programslide from "./programslide.vue";
           </h6>
         </div>
 
-        <router-link class="rounded signup-button p-5 text-white" to="Signup">Book Appointment <span class="fa fa-arrow-right"></span></router-link>
+        <router-link class="rounded signup-button p-5 text-white" to="appointment">Book Appointment <span class="fa fa-arrow-right"></span></router-link>
       </div>
 
       <div class="md:mt-20 md:pr-20 pl-5 pr-5">
@@ -39,8 +39,8 @@ import programslide from "./programslide.vue";
   <div class="bg-[#19092d]">
     <!-- OUR SERVICES-->
     <div class="abt1">
-      <div class="p-10 grid grid-cols-1 gap-4 place-items-center">
-        <div class="rounded-md aboutrectangle md:p-20 grid grid-cols-1 gap-4 bg-cover bg-center bg-no-repeat" >
+      <div class="md:p-10 p-2 grid grid-cols-1 gap-4 place-items-center">
+        <div class="rounded-md aboutrectangle md:p-20  grid grid-cols-1 gap-4 bg-cover bg-center bg-no-repeat" >
           <div class="md:space-y-28 space-y-5">
             <div class="space-y-5">
               <h3
@@ -50,7 +50,7 @@ import programslide from "./programslide.vue";
               </h3>
 
               <h6
-                class="md:text-[#7e7d7d] leading-[40px] text-[22px] md:w-5/12 font-poppins text-center md:text-left p-2 md:p-2 text-white"
+                class="md:text-[#7e7d7d] leading-[40px] md:text-[22px] md:w-5/12 font-poppins text-center md:text-left p-2 md:p-2 text-white"
               >
                 Vitfit is committed to providing a range of services that cater
                 to individual needs and goals, ensuring my clients achieve
@@ -218,9 +218,9 @@ import programslide from "./programslide.vue";
     <!-- APP COMING SOON -->
     <div class="appco ming">
       <div
-        class="grid md:grid-cols-2 gap-4 md:p-10 md:pl-20 pr-10 p-2 mt-10 appcoming"
+        class="grid md:grid-cols-2 gap-4 md:p-10 md:pl-20 pr-2 pl-2 p-2 mt-10 appcoming"
       >
-        <div class="md:p-10 md:pl-20 md:space-y-8">
+        <div class="md:p-10 md:pl-20 pl-2 md:space-y-8">
           <h2
             class="text-[#35cdf1] font-bold md:text-4xl text-2xl tracking-widest text-center md:text-left"
           >
@@ -284,7 +284,7 @@ import programslide from "./programslide.vue";
          
         </div>
 
-        <div class="grid md:grid-cols-2 md:p-10">
+        <div class="grid md:grid-cols-2 md:p-10 ">
           <div class="md:p-10 rounded-xl ">
             <img src="/images/abtimg.png" >
           </div>
@@ -292,7 +292,7 @@ import programslide from "./programslide.vue";
           <div class="">
           <p class="md:mt-24 mt-5 md:leading-[70px] md:text-4xl text  text-[#FAF6FD80]">Welcome to VitFit where your fitness goals become our mission. As a dedicated and experienced personal trainer, I am here to guide you on your journey towards achieving optimal health and wellness. Let's embark on this transformation path together!</p>
 
-          <span class="text-[#35cdf1] text-4xl cursor-pointer hover:text-[#09a0c4]" >See More...</span>
+          <span class="text-[#35cdf1] md:text-4xl cursor-pointer hover:text-[#09a0c4]" >See More...</span>
         </div>
         </div>
 
