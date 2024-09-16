@@ -1,7 +1,7 @@
 import Axios from "axios";
 console.log("dddd"+import.meta.env.VITE_APP_ENV)
 
-const http = Axios.create({ baseURL:import.meta.env.VITE_APP_ENV === "production,https://vitfitv2server.onrender.com/v1/user/booking"? "https://vitfitv2server.onrender.com/v1/": "https://vitfitv2server.onrender.com/v1/",
+const http = Axios.create({ baseURL:import.meta.env.VITE_APP_ENV === "production"? "https://vitfitv2server.onrender.com": "https://vitfitv2server.onrender.com",
  
   });
 
