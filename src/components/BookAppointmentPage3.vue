@@ -48,6 +48,10 @@ const userInfo = reactive({
 });
 
 const proceed = async (): Promise<void> => {
+  let loader = document.getElementsByClassName ('loader') as HTMLCollectionOf<HTMLElement>;
+    if (loader.length != 0) {
+  loader[0].style.display = "";
+}
   const data = {
     email: userInfo.email as string,
     fullname: userInfo.fullname as string,
@@ -78,12 +82,20 @@ const proceed = async (): Promise<void> => {
 
   if (success || error) {
       disabled.value = false;
+      if (loader.length != 0) {
+  loader[0].style.display = "none";
+}
     }
     if (success.value !== "") {
       //   redirect to the signin page
+      
       setTimeout(() => {
         window.location.href = "/successful";
       }, 3000);
+
+      if (loader.length != 0) {
+  loader[0].style.display = "none";
+}
     }
   
  
@@ -152,7 +164,7 @@ const proceed = async (): Promise<void> => {
               <p class="font-bold">Your Information</p>
             </div>
 
-            <img src="/images/check-circle.png" />
+            <img class="sepia" src="/images/check-circle.png" />
           </div>
 
           <div class="pl-[60px] text-[#FAF6FD80] grid space-y-2">
@@ -227,7 +239,8 @@ const proceed = async (): Promise<void> => {
               @click="proceed"
               class="rounded signup-button p-2 text-white"
             >
-              Continue
+              Book Appoitment 
+              <span id="loader" class="fa fa-spin fa-spinner loader" style="display:none;"></span>
             </button>
           </div>
         </div>

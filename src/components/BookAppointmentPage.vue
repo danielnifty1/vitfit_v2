@@ -177,7 +177,7 @@ const proceed = () => {
               <p class="text-sm font-bold">Duration & Time Zone</p>
             </div>
 
-            <img src="/images/check-circle.png" />
+            <img class="sepia" src="/images/check-circle.png" />
           </div>
 
           <div class="pl-[60px] text-[#FAF6FD80] grid space-y-2">
@@ -195,7 +195,7 @@ const proceed = () => {
               <p class=" ">Date & Time</p>
             </div>
 
-            <img src="/images/check-circle.png" />
+            <img class="sepia" src="/images/check-circle.png" />
           </div>
 
           <div class="pl-[60px] text-[#FAF6FD80] grid space-y-2">
@@ -213,7 +213,7 @@ const proceed = () => {
               <p class="font-bold">Your Information</p>
             </div>
 
-            <img src="/images/check-circle.png" />
+            <img class="sepia" src="/images/check-circle.png" />
           </div>
 
           <div class="pl-[60px] text-[#FAF6FD80] grid space-y-2">
