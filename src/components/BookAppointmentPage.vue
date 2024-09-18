@@ -243,7 +243,7 @@ const proceed = () => {
               <span
                 @click="getTime(index)"
                
-                class="bg-[#FAF6FD0D] md:p-3 p-1 md:rounded-sm rounded-sm mb-2 cursor-pointer hover:bg-[#35cdf1]" onfocus=""
+                class="bg-[#FAF6FD0D] md:p-2 p-1 md:rounded-sm rounded-sm mb-2 cursor-pointer hover:bg-[#35cdf1]" onfocus=""
                 v-for="(times, index) in time"
                 :key="times.id"
               >
