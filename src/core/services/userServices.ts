@@ -14,7 +14,7 @@ class AuthService {
    * @param {*} data
    */
     async userRegister(data: Booking): Promise<any> {
-        const response = await this.request.post("/user/booking", data, {});
+        const response = await this.request.post("v1/user/booking", data, {});
         return response;
       }
 
