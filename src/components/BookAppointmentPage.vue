@@ -13,7 +13,7 @@ const userInfo = reactive({
 
 const Calendar = defineAsyncComponent(() => import("./calendar/index.vue"));
 
-let time = [
+let times = [
   { id: "1", time: "10: 00 AM" },
   { id: "2", time: "10: 30 AM" },
   { id: "3", time: "11: 00 AM" },
@@ -108,8 +108,10 @@ let timeZone = [
 
 // methods
 const getTime = (timeIndex: number) => {
-  const actualTime = time[timeIndex];
+  const actualTime = times[timeIndex];
   userInfo.SelectedTime = actualTime.time;
+  // alert( actualTime.time)
+
 };
 
 const getZone = () => {
@@ -129,11 +131,25 @@ const setDate = (date: string) => {
 
 
 const proceed = () => {
+  let loader = document.getElementsByClassName ('loader') as HTMLCollectionOf<HTMLElement>;
+    if (loader.length != 0) {
+  loader[0].style.display = "";
+}
+
+  
   if (userInfo.SelectedDate == "") {
+    alert("Select Date")
+    if (loader.length != 0) {
+  loader[0].style.display = "none";
+}
     return
   }
 
   if (userInfo.SelectedTime == "") {
+    alert("Select Time")
+    if (loader.length != 0) {
+  loader[0].style.display = "none";
+}
     return
   }
 
@@ -141,6 +157,10 @@ const proceed = () => {
     userInfo.SelectedZone == "" ||
     userInfo.SelectedZone == "SELECT TIME ZONE"
   ) {
+    alert("Select Time Zone")
+    if (loader.length != 0) {
+  loader[0].style.display = "none";
+}
     return
   } 
 
@@ -243,11 +263,13 @@ const proceed = () => {
               <span
                 @click="getTime(index)"
                
-                class="bg-[#FAF6FD0D] md:p-2 p-1 md:rounded-sm rounded-sm mb-2 cursor-pointer hover:bg-[#35cdf1]" onfocus=""
-                v-for="(times, index) in time"
-                :key="times.id"
+                class="bg-[#FAF6FD0D] md:p-2 p-1 md:rounded-sm rounded-sm mb-2 cursor-pointer hover:bg-[#35cdf1]" 
+
+                :class="{'bg-blue-800': userInfo.SelectedTime ==time.time,'text-white':userInfo.SelectedTime !=time.time}"
+                v-for="(time, index) in times"
+                :key="time.id"
               >
-                {{ times.time }}
+                {{ time.time }}
               </span>
             </div>
             <p class="text-[#FAF6FDB2] mt-5">Time Zone</p>
@@ -297,11 +319,13 @@ const proceed = () => {
                 />
               </div>
               <div class="flex mt-5 w-full md:justify-end justify-center p-5">
+                
             <button
               @click="proceed"
               class="rounded signup-button p-2 text-white"
             >
-              Continue
+              Continue 
+              <span id="loader" class="fa fa-spin fa-spinner loader" style="display:none;"></span>
             </button>
           </div>
             </div>

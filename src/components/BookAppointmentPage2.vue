@@ -84,27 +84,51 @@ const getPrice=(prices:number)=>{
 
 }
 const proceed = () => {
-
+  let loader = document.getElementsByClassName ('loader') as HTMLCollectionOf<HTMLElement>;
+    if (loader.length != 0) {
+  loader[0].style.display = "";
+}
   
 
   if (userInfo.SelectedGender == "") {
+    alert("Select Gender")
+    if (loader.length != 0) {
+  loader[0].style.display = "none";
+}
     return
   }
  
 
   if (userInfo.SelectedAge == "") {
+    alert("Select Age Range")
+    if (loader.length != 0) {
+  loader[0].style.display = "none";
+}
+
     return
   }
 
   if (userInfo.goal == "") {
+    alert("Select Goal")
+    if (loader.length != 0) {
+  loader[0].style.display = "none";
+}
     return
   }
 
   if (userInfo.services == "") {
+    alert("Select Service")
+    if (loader.length != 0) {
+  loader[0].style.display = "none";
+}
     return
   }
 
   if (userInfo.price == "") {
+    alert("Select Price")
+    if (loader.length != 0) {
+  loader[0].style.display = "none";
+}
     return
   }
   
@@ -200,6 +224,7 @@ const proceed = () => {
             <div class="space-x-5">
               <span
                 @click="getGender(index)"
+                  :class="{'bg-blue-800': userInfo.SelectedGender ==gender.gender,'text-white':userInfo.SelectedGender !=gender.gender}"
                 class="bg-[#FAF6FD0D] text-white md:p-3 p-2 md:rounded-sm rounded-sm mb-2 cursor-pointer hover:bg-[#35cdf1]"
                 v-for="(gender, index) in gender"
                 :key="gender.id"
@@ -215,6 +240,9 @@ const proceed = () => {
             <div class="space-x-5">
               <span
                 @click="getAge(index)"
+
+                :class="{'bg-blue-800': userInfo.SelectedAge ==ageGap.age,'text-white':userInfo.SelectedAge !=ageGap.age}"
+
                 class="bg-[#FAF6FD0D] text-white md:p-3 p-2 md:rounded-sm rounded-sm mb-2 cursor-pointer hover:bg-[#35cdf1]"
                 v-for="(ageGap, index) in ageGap"
                 :key="ageGap.id"
@@ -244,6 +272,7 @@ const proceed = () => {
                 @click="getServices(index)"
                 v-for="(services, index) in services"
                 :key="services.id"
+                 :class="{'bg-blue-800': userInfo.services ==services.serviceValue,'text-white':userInfo.services !=services.serviceValue}"
                 class="bg-[#FAF6FD0D] text-sm text-white md:pl-10 pr-10 p-5 md:rounded-xl h-[80px] w-10/12 justify-center ml-2 text-center rounded-sm mb-2 cursor-pointer hover:bg-[#35cdf1]"
                 >{{ services.serviceValue }}
               </span>
@@ -264,6 +293,7 @@ const proceed = () => {
           <div class="grid grid-cols-4 space-x-5 text-center">
             <span
              @click="getPrice(index)"
+              :class="{'bg-blue-800': userInfo.price ==price.price,'text-white':userInfo.price !=price.price}"
               class="bg-[#FAF6FD0D] text-white md:p-3 p-1 md:rounded-sm rounded-sm mb-2 cursor-pointer hover:bg-[#35cdf1]"
               v-for="(price,index) in price"
               :key="price.id"
@@ -273,7 +303,7 @@ const proceed = () => {
           </div>
 
           <div class="flex mt-5 w-full md:justify-end justify-center">
-            <button  @click="proceed" class="rounded signup-button p-2 text-white">Continue</button>
+            <button  @click="proceed" class="rounded signup-button p-2 text-white">Continue  <span id="loader" class="fa fa-spin fa-spinner loader" style="display:none;"></span></button>
             
           </div>
         </div>

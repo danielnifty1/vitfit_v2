@@ -10,10 +10,15 @@ actions:{
         try{
             const response = await userService.userRegister(data)
             if(response.data){
+                console.log("this response.date"+response.data);
                 return await Promise.resolve(response);
             } else if(response.response){
+                console.log("this response.response"+response.response);
+
                 return await Promise.reject(response.response);
             }else{
+                console.log("this response.message"+response.message);
+                
                 return await Promise.resolve(response.message);
             }
         }

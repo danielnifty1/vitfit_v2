@@ -11,6 +11,12 @@ const disabled = ref(false);
 
  
 
+const errorvalue=reactive({
+networkerror:""
+
+})
+ 
+
 const selectedDate = route.query.date;
 const selectedTime = route.query.time;
 const selectedZone = route.query.zone;
@@ -48,6 +54,12 @@ const userInfo = reactive({
 });
 
 const proceed = async (): Promise<void> => {
+
+ 
+ 
+ 
+
+
   let loader = document.getElementsByClassName ('loader') as HTMLCollectionOf<HTMLElement>;
     if (loader.length != 0) {
   loader[0].style.display = "";
@@ -93,9 +105,13 @@ const proceed = async (): Promise<void> => {
         window.location.href = "/successful";
       }, 3000);
 
-      if (loader.length != 0) {
-  loader[0].style.display = "none";
-}
+
+    }0
+   
+    
+    if(error.value!==""){
+      // alert(error.value)
+      errorvalue.networkerror="there was an Error, kindly Trying again later"
     }
   
  
@@ -185,6 +201,7 @@ const proceed = async (): Promise<void> => {
           <h4 class="p-1 font-bold text-[#FAF6FDB2]">Personal Information</h4>
         </div>
 
+  <p id="errorid" class="text-center text-sm text-red-500 font-bold">{{errorvalue.networkerror}}</p>
         <div class="grid md:grid-cols-1 md:p-2 space-y-2">
           <div class="grid md:grid-cols-2 gap-0 space-y-5">
             <div class="grid md:p-10 p-2 space-y-2">
@@ -192,7 +209,7 @@ const proceed = async (): Promise<void> => {
               <input
                 v-model="userInfo.fullname"
                 class="p-4 bg-[#FAF6FD0D] text-white rounded-xl"
-                placeholder=" Your Fullname"
+                placeholder=" Your Fullname" 
               />
             </div>
 
@@ -230,7 +247,7 @@ const proceed = async (): Promise<void> => {
             <input type="checkbox" />
             <p class="md:p-5 text-[#FAF6FDB2] md:font-bold md:text-5sm">
               By providing my phone number, I agree to receive text messages
-              from the business.Your Phone Number
+              from the business
             </p>
           </div>
 
