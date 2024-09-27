@@ -58,7 +58,7 @@ const proceed = async (): Promise<void> => {
   };
   // https://vitfitv2server.onrender.com/v1/localhost:8080/v1/user/contactus
   const responsed = await axios
-    .post("user/contactus", data, {
+    .post("https://vitfitv2server.onrender.com/v1/user/contactus", data, {
       method: "POST",
 
       headers: {
