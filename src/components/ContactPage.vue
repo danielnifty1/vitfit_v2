@@ -31,7 +31,7 @@ const data = {
     message: userInfo.Message as string,
 }
 // https://vitfitv2server.onrender.com/v1/localhost:8080/v1/user/contactus
-const responsed =await axios.post('user/contactus',data,
+const responsed =await axios.post('https://vitfitv2server.onrender.com/v1/user/contactus',data,
 {
       method: 'POST',
     
