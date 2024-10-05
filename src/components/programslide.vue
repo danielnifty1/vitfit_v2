@@ -23,7 +23,7 @@
 // }
 </script>
 <template>
-  <div class="grid md:grid-cols-2 gap-4 place-content-between p-10">
+  <div class="grid md:grid-cols-1 gap-4 place-content-between p-10">
     <div class="bgtext bg-cover bg-center bg-no-repeat md:p-20 ">
       <h1
         class="font-bold md:text-[45px] text-xl   text-center md:text-left text-[#35cdf1] md:mt-10 font-poppins md:leading-[50px] p-10"
@@ -32,7 +32,7 @@
       </h1>
     </div>
 
-    <div class="md:grid gap-4 grid-cols-2 justify-self-end hidden md:mt-20">
+    <!-- <div class="md:grid gap-4 grid-cols-2 justify-self-end hidden md:mt-20">
       <div class="space-x-3">
         <span
           class="cursor-pointer fa fa-arrow-left p-5 rounded-full border-white border text-white hover:bg-[#35cdf1] hover:border-[#35cdf1]"
@@ -42,7 +42,7 @@
           class="cursor-pointer fa fa-arrow-right p-5 rounded-full border-white border text-white hover:bg-[#35cdf1] hover:border-[#35cdf1]"
         ></span>
       </div>
-    </div>
+    </div> -->
   </div>
   <section>
     <div class="flex bg-[#19092d]">

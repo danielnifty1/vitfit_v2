@@ -54,12 +54,6 @@ const userInfo = reactive({
 });
 
 const proceed = async (): Promise<void> => {
-
- 
- 
- 
-
-
   let loader = document.getElementsByClassName ('loader') as HTMLCollectionOf<HTMLElement>;
     if (loader.length != 0) {
   loader[0].style.display = "";
@@ -106,7 +100,7 @@ const proceed = async (): Promise<void> => {
       }, 3000);
 
 
-    }0
+    }
    
     
     if(error.value!==""){
