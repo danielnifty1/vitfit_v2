@@ -10,7 +10,7 @@ const proceed = () => {
 
         <h2 class="md:text-4xl text-[#2598F1] font-bold text-center">BOOKING SUCCESSFUL!!</h2>
 
-        <p class="text-center text-[#FAF6FD80]">Thank for Arranging Your Free Consultation Call with VITFIT You will soon receive a text and email confirmation to inform you that we have successfully received your application.</p>
+        <p class="text-center text-[#FAF6FD80]">Thank you for Arranging Your Free Consultation Call with VITFIT. You will soon receive a text and email confirmation to inform you that we have successfully received your application.</p>
 
         <button @click="proceed()" class="bg-[#2598F1] p-2 pl-4 pr-4 rounded-sm text-white">ok</button>
     </div>
