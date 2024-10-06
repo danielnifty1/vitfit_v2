@@ -8,7 +8,9 @@ import programslide from "./programslide.vue";
 import Approachslide from "./approachslide.vue";
 import ApproachslideMobile from "./approachslidemobile.vue";
 
-
+const proceed = async (): Promise<void> => {
+location.replace("services")
+}
 
  
 </script>
@@ -63,7 +65,8 @@ import ApproachslideMobile from "./approachslidemobile.vue";
 
             <div class="grid md:grid-cols-4 gap-4 w-full p-5 md:p-0">
               <div class="feature w-full bg-[#2598F1]">
-                <h6
+                <h6 
+                @click="proceed"
                   class="feature-text text-white text-center text-[20px] uppercase"
                 >
                   1 ON 1 <br />COACHING
@@ -72,6 +75,7 @@ import ApproachslideMobile from "./approachslidemobile.vue";
 
               <div class="feature w-full">
                 <h6
+                 @click="proceed"
                   class="feature-text text-white text-center text-[20px] uppercase"
                 >
                   Nutritional<br />Plan
@@ -80,6 +84,7 @@ import ApproachslideMobile from "./approachslidemobile.vue";
 
               <div class="feature w-full">
                 <h6
+                 @click="proceed"
                   class="feature-text text-white text-center text-[20px] uppercase"
                 >
                   virtual <br />fitcam
@@ -88,6 +93,7 @@ import ApproachslideMobile from "./approachslidemobile.vue";
 
               <div class="feature w-full">
                 <h6
+                 @click="proceed"
                   class="feature-text text-white text-center text-[20px] uppercase"
                 >
                   cook with <br />you virtually
