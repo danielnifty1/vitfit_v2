@@ -202,7 +202,7 @@ const proceed = () => {
 
           <div class="pl-[60px] text-[#FAF6FD80] grid space-y-2">
             <span class=""> 30 mins </span>
-            <span class=""> Africa/Lagos (GMT+1) </span>
+            <span class=""> {{userInfo.SelectedZone}} </span>
           </div>
         </div>
 
@@ -219,8 +219,8 @@ const proceed = () => {
           </div>
 
           <div class="pl-[60px] text-[#FAF6FD80] grid space-y-2">
-            <span class=""> 10:30 -11:00 AM </span>
-            <span class=""> Fri, Jul 02, 2024 </span>
+            <span class="">Time: {{userInfo.SelectedTime}} </span>
+            <span class=""> Date: {{userInfo.SelectedDate}} </span>
           </div>
         </div>
 
@@ -237,8 +237,7 @@ const proceed = () => {
           </div>
 
           <div class="pl-[60px] text-[#FAF6FD80] grid space-y-2">
-            <span class=""> 10:30 -11:00 AM </span>
-            <span class=""> Fri, Jul 02, 2024 </span>
+            
           </div>
         </div>
       </div>
