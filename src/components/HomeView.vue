@@ -5,6 +5,10 @@ import testimonialview from "./testimonialView.vue";
 import testimonialMobile from "./testimonialMobile.vue";
 
 import programslide from "./programslide.vue";
+import Approachslide from "./approachslide.vue";
+import ApproachslideMobile from "./approachslidemobile.vue";
+
+
 
  
 </script>
@@ -104,63 +108,12 @@ import programslide from "./programslide.vue";
       >
         Our Approach
       </h1>
-      <div class="grid md:grid-cols-3 place-items-center md:p-10">
-        <div class="grid grid-cols-1 md:p-10 p-5">
-          <div
-            class="rounded-xl grid grid-cols-1 place-items-center p-5 border-t-[#2598F1] border-t-4 bg-[#FAF6FD0D] space-y-5"
-          >
-            <img src="/images/kiss.png" />
-            <span class="pt-3 text-[#FAF6FD80] font-bold text-xl">
-              Goal Setting</span
-            >
 
-            <p class="text-[#7e7d7d] text-center">
-              We work closely with you to define your specific goals, whether
-              it's weight loss, building muscle, enhancing athletic performance,
-              or simply adopting a healthier lifestyle. By establishing clear
-              objectives, we can develop a tailored plan that maximizes your
-              potential.
-            </p>
-          </div>
-        </div>
-
-        <div class="grid grid-cols-1 md:p-10 p-5">
-          <div
-            class="rounded-xl grid grid-cols-1 place-items-center p-5 border-t-[#2598F1] border-t-4 bg-[#FAF6FD0D] space-y-5"
-          >
-            <img src="/images/kiss3.png" />
-            <span class="pt-3 text-[#FAF6FD80] font-bold text-xl">
-              Customized Workouts</span
-            >
-
-            <p class="text-[#7e7d7d] text-center">
-              Our training sessions are carefully crafted to suit your fitness
-              level, preferences, and limitations. Whether you prefer
-              high-intensity workouts, strength training, cardiovascular
-              exercises, or a combination thereof, we will create a program that
-              keeps you engaged and motivated.
-            </p>
-          </div>
-        </div>
-
-        <div class="grid grid-cols-1 md:p-10 p-5">
-          <div
-            class="rounded-xl grid grid-cols-1 place-items-center p-5 border-t-[#2598F1] border-t-4 bg-[#FAF6FD0D] space-y-5"
-          >
-            <img src="/images/kiss2.png" />
-            <span class="pt-3 text-[#FAF6FD80] font-bold text-xl">
-              Nutritional Guidance</span
-            >
-
-            <p class="text-[#7e7d7d] text-center">
-              We work closely with you to define your specific goals, whether
-              it's weight loss, building muscle, enhancing athletic performance,
-              or simply adopting a healthier lifestyle. By establishing clear
-              objectives, we can develop a tailored plan that maximizes your
-              potential.
-            </p>
-          </div>
-        </div>
+      <div class="w-full  hidden md:grid  ">
+        <Approachslide   class=" " />
+      </div>
+      <div class="w-full md:hidden  ">
+        <ApproachslideMobile   class="hidden"   />
       </div>
     </div>
 
@@ -204,7 +157,7 @@ import programslide from "./programslide.vue";
           <p class="text-center md:text-3xl font-bold font-poppins text-white">
             Vitfit Member’s Success <br />Story
           </p>
-          <div class="  ">
+          <div class=" ">
             <testimonialview   class="hidden md:flex" />
 
             <testimonialMobile   class=" md:hidden" />
