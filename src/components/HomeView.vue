@@ -50,15 +50,14 @@ import ApproachslideMobile from "./approachslidemobile.vue";
               <h3
                 class="font-bold md:text-7xl text-4xl mt-10 text-[#2598F1] text-center md:text-left"
               >
-                Our Services
+                About Us
               </h3>
 
               <h6
                 class="md:text-[#7e7d7d] leading-[40px] md:text-[22px] md:w-5/12 font-poppins text-center md:text-left p-2 md:p-2 text-white"
               >
-                Vitfit is committed to providing a range of services that cater
-                to individual needs and goals, ensuring my clients achieve
-                optimal fitness and well-being. Let's break down each service:
+               At VitFit, we believe that fitness is not just about physical appearance; it's a holistic journey towards better health and well-being. Our mission is to empower individuals to achieve their personal fitness goals through customized training programs, nutrition guidance, and unwavering support. 
+
               </h6>
             </div>
 
