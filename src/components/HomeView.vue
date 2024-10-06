@@ -64,7 +64,7 @@ location.replace("services")
             </div>
 
             <div class="grid md:grid-cols-4 gap-4 w-full p-5 md:p-0">
-              <div class="feature w-full bg-[#2598F1]">
+              <div class="feature w-full bg-[#2598F1] cursor-pointer">
                 <h6 
                 @click="proceed"
                   class="feature-text text-white text-center text-[20px] uppercase"
@@ -73,16 +73,16 @@ location.replace("services")
                 </h6>
               </div>
 
-              <div class="feature w-full">
+              <div class="feature w-full cursor-pointer">
                 <h6
                  @click="proceed"
-                  class="feature-text text-white text-center text-[20px] uppercase"
+                  class="feature-text text-white text-center text-[20px] uppercase cursor:pointer"
                 >
                   Nutritional<br />Plan
                 </h6>
               </div>
 
-              <div class="feature w-full">
+              <div class="feature w-full cursor-pointer">
                 <h6
                  @click="proceed"
                   class="feature-text text-white text-center text-[20px] uppercase"
@@ -91,7 +91,7 @@ location.replace("services")
                 </h6>
               </div>
 
-              <div class="feature w-full">
+              <div class="feature w-full cursor-pointer">
                 <h6
                  @click="proceed"
                   class="feature-text text-white text-center text-[20px] uppercase"
