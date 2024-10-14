@@ -12,15 +12,14 @@ let Links = [
 <template>
     <div class=" md:p-10 abt1">
         <div class="grid grid-cols-2 gap-4 content-between ">
-            <div class="w-full space-y-5 md:pl-10  ">
-                <div class="flex pl-10 space-x-2 ">
-                    <img src="/images/vitfit.png" >
-                    <h4 class="text-[#2598F1] font-bold text-[24px]">
-        VIT<span class="">FIT</span>
-      </h4>
+            <div class="w-full space-y-5 md:pl-10 content-center pl-0  ">
+                <div class="md:flex pl-10 grid grid-cols-1 place-items-center    ">
+                    <img src="/images/vector.svg" class="md:w-[50px] w-10" />
+                    <p class="pl-10 text-[#FAF6FD80]"> VitFit where your fitness goals <br>become our mission.</p>
+              
                 </div>
 
-                <p class="pl-10 text-[#FAF6FD80]"> VitFit where your fitness goals <br>become our mission.</p>
+               
             </div>
 
             <div class="md:grid md:grid-cols-1 md:flex w-full   md:pr-10">

@@ -22,10 +22,8 @@ let Links = [
 <template>
   <nav class="flex items-center bg-[#19092d] pt-5 pl-2 md:pt-0 w-full ">
     <div class="md:px-10 md:ml-10 flex space-x-2 ">
-      <img src="/images/vitfit.png" />
-      <h4 class="text-[#2598F1] font-bold text-[24px]">
-        VIT<span class="">FIT</span>
-      </h4>
+      <img src="/images/vector.svg" class="md:w-[150px] w-20" />
+      
       <span
         @click="Menuopen()"
         class="absolute md:hidden right-6 top-3 cursor-pointer text-2xl text-[#2598F1] pr-5"
