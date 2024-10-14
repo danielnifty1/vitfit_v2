@@ -16,6 +16,7 @@ let Links = [
                 <div class="md:flex pl-10 grid grid-cols-1 place-items-center    ">
                     <img src="/images/vector.svg" class="md:w-[50px] w-10" />
                     <p class="pl-10 text-[#FAF6FD80]"> VitFit where your fitness goals <br>become our mission.</p>
+                    
               
                 </div>
 
