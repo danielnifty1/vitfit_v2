@@ -10,13 +10,14 @@ let Links = [
 ];
 </script>
 <template>
+    
     <div class=" md:p-10 abt1">
         <div class="grid grid-cols-2 gap-4 content-between ">
             <div class="w-full space-y-5 md:pl-10 content-center pl-0  ">
                 <div class="md:flex pl-10 grid grid-cols-1 place-items-center    ">
                     <img src="/images/vector.svg" class="md:w-[50px] w-10" />
                     <p class="pl-10 text-[#FAF6FD80]"> VitFit where your fitness goals <br>become our mission.</p>
-                    
+
               
                 </div>
 
